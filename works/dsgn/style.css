@@ -114,6 +114,11 @@ header .navigate {
     /*margin-left: 10px;*/
 }
 
+.ps_nav {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .navigate .dropleft {
     position: absolute;
     top: 30px;
