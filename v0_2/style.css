@@ -380,9 +380,9 @@ section::-moz-scrollbar {
 }
 
 .load {
-    -webkit-filter: blur(20px);
-    -o-filter: blur(20px);
-    filter: blur(20px);
+    -webkit-filter: blur(40px);
+    -o-filter: blur(40px);
+    filter: blur(40px);
     -webkit-transition: all 2s linear 0s;
     -o-transition: all 2s linear 0s;
     transition: all 2s linear 0s;
