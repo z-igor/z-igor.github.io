@@ -1,0 +1,785 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.logo {
+		background-size: 430px !important;
+		background-position: 280px top !important;
+		padding: 0 0 70px 100px !important;
+	}
+
+	.logo img {
+		width: 120px;
+	}
+
+	.logo .socil {
+		margin: 50px 0 0 8px;
+	}
+
+	.logo .socil i {
+		width: 3%;
+		font-size: 2rem;
+	}
+
+	.single .krest {
+		right: -10% !important;
+	}
+
+	.designers .cv {
+		margin: 0 0 0 0 !important;
+	}
+
+	footer .socil {
+		margin: 50px 0 0 0 !important;
+		width: 130px !important;
+	}
+
+	footer .logo p,
+	footer .logo img {
+		margin-left: 0px !important;
+	}
+
+	footer .socil i {
+		margin: 0 2px !important;
+		width: 20px !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.logo {
+		background-size: 300px !important;
+		background-position: 200px 20px !important;
+		padding: 0 0 10px 16px !important;
+	}
+
+	.logo img {
+		width: 120px;
+	}
+
+	.logo .socil {
+		margin: 10px 0 0 0;
+	}
+
+	.logo .socil i {
+		width: 5%;
+		font-size: 2rem;
+		margin: 10px 0 !important;
+	}
+
+	header .navigate {
+		height: 290px !important;
+	}
+
+	header .navigate i {
+		font-size: 1.5rem !important;
+		width: 30px !important;
+		height: 50px !important;
+		line-height: 50px !important;
+		top: 30px !important;
+		left: 52% !important;
+	}
+
+	header .navigate p:nth-child(2) {
+		left: 10% !important;
+		bottom: 23% !important;
+	}
+
+	header .navigate p:last-child {
+		left: 31% !important;
+		bottom: 10% !important;
+	}
+
+	.projct .p22 {
+		background-size: 90% !important;
+	}
+
+	.projct .p22 h1,
+	.projct .p22 p:nth-child(2) {
+		width: auto !important;
+		margin: 10px 0 0 5% !important;
+	}
+
+	.projct .tabano {
+		height: 380px !important;
+		padding: 200px 0 0 0 !important;
+	}
+
+	.projct .tabano .view {
+		position: inherit !important; 
+		left: 30px;
+		top: -5px;
+	}
+
+	.projct .tabano p:last-child {
+		left: 60%;
+		bottom: 10px;
+	}
+
+	.projct .louis .view {
+		margin: 10px 0 10px 30px !important;
+	}
+
+	.projct .louis p:last-child {
+		text-align: left;
+	}
+
+	.projct .p22 div {
+		display: inline-table !important;
+		top: 10px !important;
+		left: 2%;
+	}
+
+	.projct .p22 .view,
+	.projct .p22 p:last-child {
+		width: 160px !important;
+	}
+
+	.projct .fiji {
+		background-size: 200px !important;
+	}
+
+	.projct .fiji div {
+		margin: 0 60px 0 0 !important;
+	}
+
+	.projct .sesann {
+		background-size: 70% !important;
+	}
+
+	.projct .sesann h1 {
+		margin: 120px 0 0 15% !important;
+	}
+
+	.projct .sesann p:nth-child(2) {
+		margin: 0 0 0 15% !important;
+	}
+
+	.projct .sesann .view {
+		top: 0 !important;
+		left: 15% !important;
+	}
+
+	.projct .sesann p:last-child {
+		top: 10px !important;
+		left: 25% !important;
+	}
+
+	.projct .alessi {
+		background-position: left 40% !important;
+	}
+
+	.projct .alessi div {
+		right: 30px !important;
+		bottom: 40px !important;
+	}
+
+	.single .krest {
+		right: -5% !important;
+	}
+
+	
+	.studio > div:first-child {
+		height: 100px !important;
+	}
+
+	.studio > div:first-child h1 {
+		bottom: 10% !important;
+		right: 35% !important;
+	}
+
+	.designers .cv {
+		margin: 0 0 0 5% !important;
+	}
+
+	.news > div:first-child {
+		height: 100px !important;
+	}
+
+	.news > div:first-child h1 {
+		bottom: 15px !important;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.logo {
+		background-size: 300px !important;
+		background-position: right center !important;
+		padding: 0 0 10 0 !important;
+	}
+
+	header .navigate {
+		padding: 0 !important;
+	}
+
+	header .navigate i {
+		font-size: 1.5rem !important;
+		width: 20px !important;
+		height: 40px !important;
+		line-height: 40px !important;
+		top: 10px !important;
+		left: 90% !important;	
+	}
+
+	.navigate .dropleft {
+		width: 40px !important;
+		height: 40px !important;
+		top: 10px !important;
+		right: 20px !important;
+	}
+
+	.navigate .dropleft nav {
+		width: 405px !important;
+		right: -24px !important;
+	}
+
+	.navigate .dropleft nav a {
+		padding: 5px 10px !important;
+		font-size: 1.3rem !important;
+		color: #fff !important;
+		line-height: 30px !important;
+	}
+
+	.navigate .dropleft:hover nav {
+		background: transparent !important; 
+	}
+
+	.projct .fiji h1,
+	.projct .fiji p {
+		left: 10% !important;
+	}
+
+	.single .krest {
+		top: -20% !important;
+		right: 5% !important;
+	}
+
+	.view,
+	.projct .louis .view {
+		display: none !important;
+	}
+
+	.studio > div:nth-child(2) {
+		padding: 60px 0px 0 30px !important;
+	}
+
+	.studio > div:last-child {
+		padding: 60px 0 0 30px !important;
+	}
+
+	.studio > div:first-child {
+		height: 100px !important;
+	}
+
+	.studio > div:first-child h1 {
+		bottom: 10% !important;
+		right: 35% !important;
+	}
+
+	.designers .cv {
+		margin: 0 0 0 10% !important;
+	}
+
+	.news .news1,
+	.news .news2 {
+		margin: 10px 0 !important;
+	}
+
+	footer .logo,
+	footer .adrss {
+		margin: 0 !important;
+	}
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+@media only screen and (max-width : 767px) {
+	header .navigate {
+		background: #7acec3 url() !important;
+		height: 180px !important;
+	}
+
+	header .navigate p:nth-child(2) {
+		top: 60px !important;
+		left: 15% !important;
+		bottom: 0 !important;
+		font-size: 1.9rem;
+	}
+
+	header .navigate p:last-child {
+		left: 60% !important;
+		bottom: 40px !important;
+		font-size: 1.9rem;
+	}
+
+	.projct .start {
+		height: 170px !important;
+	}
+
+	.projct .start p {
+		left: 15% !important;
+	}
+
+	.projct .fondue {
+		height: 420px !important;
+		background-position: right center !important;
+	}	
+
+	.projct .fondue p:last-child {
+		bottom: 20% !important;
+		left: 24% !important;
+	}
+	
+	.projct .potter {
+		height: 350px !important;
+		background-position: right center !important;
+	}
+
+	.projct .potter p:last-child {
+		left: 15% !important;
+	}
+
+	.projct .tabano {
+		height: 300px !important;
+		background-position: right center !important;
+		background-size: 350px !important; 
+		padding: 0 !important;
+	}
+
+	.projct .tabano p:nth-child(3) {
+		position: inherit !important; 
+		display: block;
+		left: 30px;
+		top: 15px;
+	}
+
+	.projct .tabano p:last-child {
+		position: inherit !important; 
+		left: 40px;
+		top: 20px;
+	}
+
+	.projct .louis {
+		margin: 0 !important;
+	}
+
+	.projct .louis p,
+	.projct .louis h1 {
+		display: block !important;
+		width: 200px;
+	}
+
+	.projct .louis h1 {
+		margin: 100px 0 10px 30px !important;
+	}
+
+	.projct .louis .view {
+		margin: 10px 0 10px 30px !important;
+		text-align: center;
+		font-size: 2rem;
+		width: 160px;
+	}
+
+	.projct .p22 {
+		margin: 0 !important;
+		background-position: left center !important;
+		background-size: 380px !important; 
+		height: 350px !important;
+	}
+
+	.projct .p22 div {
+		display: inline-table !important;
+		top: 10px !important;
+		left: 37%;
+		width: 300px;
+	}
+
+	.projct .p22 .view,
+	.projct .p22 p:last-child {
+		width: auto !important;
+		margin: 0 !important;
+	}
+
+	.projct .fiji {
+		background-size: 240px !important;
+	}
+
+	.projct .sesann {
+		background-position: center top;
+		background-size: 70% !important;
+		height: 300px !important;
+		border:1px solid #fcfcfc;
+	}
+
+	.projct .sesann h1 {
+		margin: 190px 0 0 15% !important;
+		/*border:1px solid;*/
+	}
+
+	.projct .sesann p:nth-child(2) {
+		margin: 0 0 0 15% !important;
+	}
+
+	.projct .alessi {
+		background-position: left 40% !important;
+	}
+
+	.projct .alessi div {
+		right: 30px !important;
+		bottom: 40px !important;
+	}
+
+	.projct .end {
+		height: 170px !important;
+	}
+
+	.view {
+		display: none !important;
+	}
+
+
+	.studio > div:first-child {
+		height: 100px !important;
+	}
+
+	.studio > div:first-child h1 {
+		bottom: 10% !important;
+		right: 35% !important;
+	}
+
+	.news .news1,
+	.news .news2 {
+		height: 650px !important;
+	}
+
+	footer .logo,
+	footer .adrss {
+		margin: 10px 0 !important;
+	}
+
+	footer .socil {
+		margin: 0 auto !important;
+	}
+
+	footer .adrss p,
+	footer .logo p {
+		width: 160px;
+		margin: 10px auto !important;
+	}
+
+	footer .logo > a {
+		margin: 0 auto !important;
+		display: block;
+		width: 160px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.logo {
+		background-size: 50% !important;
+		background-position: 80% 30% !important;
+	}
+
+	.logo .socil {
+		margin: 10px 0 0 0;
+	}
+
+	.logo .socil i {
+		width: 5%;
+		font-size: 2rem;
+		margin: 10px 0 !important;
+	}
+
+	.navigate .dropleft {
+		width: 35px !important;
+		height: 35px !important;
+		top: 10px !important;
+		right: 25px !important;
+	}
+
+	.navigate .dropleft nav {
+		height: 35px !important;
+		width: 300px !important;
+		right: 0 !important;
+	}
+
+	.navigate .dropleft nav a {
+		padding: 3px 8px !important;
+		font-size: 1rem !important;
+		color: #fff !important;
+	}
+
+	header .navigate p:nth-child(2) {
+		top: 55px !important;
+		left: 50px !important;
+		bottom: 0 !important;
+		font-size: 1.5rem;
+	}
+
+	header .navigate p:last-child {
+		left: 50% !important;
+		bottom: 25% !important;
+		font-size: 1.5rem;
+	}
+
+	.navigate .dropleft:hover nav {
+		background: transparent !important; 
+	}
+
+	.projct .start {
+		height: 150px !important;
+	}
+
+	.projct .start p {
+		left: 19% !important;
+	}
+
+	.projct .fondue {
+		height: 370px !important;
+	}	
+
+	.projct .fondue h1 {
+		left: 30px !important;
+	}
+
+	.projct .fondue p {
+		left: 30px !important;
+		margin: 10px 0;
+	}
+
+	.projct .fondue p:last-child {
+		left: 20% !important;
+	}
+	
+	.projct .potter {
+		height: 250px !important;
+	}
+
+	.projct .tabano {
+		height: 270px !important;
+		background-size: 65% !important; 
+	}
+
+	.projct .tabano h1,
+	.projct .tabano p:nth-child(2) {
+		margin-left: 30px !important;
+	}
+
+	.projct .tabano p:last-child {
+		left: 20% !important;
+	}
+
+	.projct .louis {
+		height: 300px !important;
+	}
+
+	.projct .louis h1 {
+		margin: 20px 0 0 30px !important;
+	}
+
+	.projct .p22 {
+		background-position: left bottom !important;
+		background-size: 70% !important; 
+		height: 310px !important;
+	}
+
+	.projct .p22 div {
+		display: inline-table !important;
+		top: 10px !important;
+		left: 33%;
+		width: 320px;
+	}
+
+	.projct .p22 .view,
+	.projct .p22 p:last-child {
+		width: 160px !important;
+	}
+
+	.projct .p22 p:last-child {
+		margin: 50px 0 0 0 !important;
+	}
+
+	.projct .fiji {
+		background-size: 200px !important;
+	}
+
+	.projct .fiji h1,
+	.projct .fiji p {
+		left: 50% !important;
+	}
+
+	.projct .sesann {
+		background-size: 80% !important;
+		height: 280px !important;  
+	}
+
+	.projct .sesann h1 {
+		margin: 150px 0 0 30px !important;
+	}
+
+	.projct .sesann p:nth-child(2) {
+		margin: 0 0 0 30px !important;
+	}
+
+	.projct .alessi {
+		background-position: left 40% !important;
+	}
+
+	.projct .alessi div {
+		right: 30px !important;
+		bottom: 40px !important;
+	}
+
+	.projct .end {
+		height: 170px !important;
+	}
+
+	.studio > div:first-child {
+		height: 100px !important;
+	}
+
+	.studio > div:first-child h1 {
+		bottom: 10% !important;
+		right: 35% !important;
+	}
+
+	.studio > div:nth-child(2) {
+		padding: 10px 20px !important;
+		font-size: 1.5rem !important;
+	}
+
+	.studio > div:last-child {
+		padding: 10px 20px 80px 20px !important;
+	}
+
+	.studio > div:last-child span {
+		font-size: 1rem !important;
+	}
+
+	.designers .cv {
+		margin: 0 0 0 20% !important;
+	}
+
+	.news .news1,
+	.news .news2 {
+		height: 500px !important;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.logo {
+		background-size: 200px !important;
+		background-position: 140px 20px !important;
+		padding: 0 0 0 16px !important;
+		width: 350px !important;
+	}
+
+	.logo img {
+		width: 120px;
+	}
+
+	.logo .socil {
+		margin: 10px 0 0 0;
+	}
+
+	.logo .socil i {
+		width: 7%;
+		font-size: 2rem;
+		margin: 10px 0 !important;
+	}
+
+	header .navigate p:nth-child(2) {
+		font-size: 1.5rem;
+	}
+
+	header .navigate p:last-child {
+		font-size: 1.5rem;
+	}
+
+	.projct .sesann .view {
+		top: -40% !important;
+		left: 50% !important;
+	}
+
+	.projct .sesann p:last-child {
+		top: -15% !important;
+		left: 25% !important;
+	}
+
+	
+
+	.designers .cv {
+		margin: 0 0 0 10% !important;
+	}
+
+	.news .news1,
+	.news .news2 {
+		height: 400px !important;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/*Bootstrap media, проверка работоспособности*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }

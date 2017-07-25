@@ -1,0 +1,821 @@
+*,
+*::after,
+*::before {
+    /*border: 1px solid;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.robotCb {
+    font-family: 'roboto_condensedbold', Calibri, sans-serif;
+}
+
+.robotCi {
+    font-family: 'roboto_condenseditalic', Calibri, sans-serif;
+}
+
+.robotCl {
+    font-family: 'roboto_condensedlight', Calibri, sans-serif;
+}
+
+.robotCr {
+    font-family: 'roboto_condensedregular', Calibri, sans-serif;
+}
+
+.robotl {
+    font-family: 'robotolight', Calibri, sans-serif;
+}
+
+.robotr {
+    font-family: 'robotoregular', Calibri, sans-serif;
+}
+
+header {
+    min-width: 319px;
+    height: 450px;
+    width: 100%;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header .row > div {
+    /*padding-left: 0;*/
+    /*padding-right: 0;*/
+}
+
+header,
+.projct,
+.designers,
+.news,
+.studio {
+    overflow: hidden;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header .logo {
+    margin: 30px 0 0 0;
+    padding: 0 0 70px 100px;
+}
+
+header .logo p {
+    font-size: 1.6rem;
+    color: #393d3c;
+    line-height: 1;
+}
+
+header .socil {
+    margin: 70px 0 0 8px;
+}
+
+header .socil i {
+    color: #7bcbc1;
+    width: 4%;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+header .socil a:hover i {
+    color: #ebb240;
+}
+
+header .navigate {
+    height: 500px;
+    /*width: 50%;*/
+    position: relative;
+    right: 0;
+    top: 0;
+    background: #7acec3 url(img/headerightbg.png) no-repeat center / cover;
+    /*background-size: contain;*/
+    /*margin-left: 10px;*/
+}
+
+.navigate .dropleft {
+    position: absolute;
+    top: 30px;
+    right: 40%;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: url(img/interface.png) no-repeat center / contain;
+    background-size: 40%;
+}
+
+.navigate .dropleft:hover {
+    border: 1px solid #f8c255;
+    background-color: #f8c255
+}
+
+.navigate .dropleft nav {
+    position: absolute;
+    width: 570px;
+    height: 90px;
+    top: -1px;
+    right: 80px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.navigate .close {
+    border: 1px solid #f8c255;
+    background: #f8c255 url(img/delete.svg) no-repeat center / contain;
+    background-size: 40%;
+}
+
+.navigate .dropleft nav a {
+    padding: 0 30px;
+    color: #fff;
+    float: left;
+    text-align: center;
+    background: #f8c255;
+}
+
+.navigate .dropleft:hover nav {
+    text-decoration: underline;
+}
+
+header .navigate p:nth-child(2),
+header .navigate p:last-child {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    line-height: 1.1;
+}
+
+header .navigate p:nth-child(2) {
+    left: 30px;
+    bottom: 110px;
+}
+
+header .navigate p:last-child {
+    left: 100px;
+    bottom: 50px;
+}
+
+/* ^ */
+
+.projct {}
+
+.view {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.view img {
+    /*margin-right: 8px;*/
+}
+
+.view:hover {
+    text-decoration: underline;
+}
+
+.projct .row {
+    min-width: 320px
+}
+
+.projct .row>div {
+    padding: 0;
+}
+
+.projct h1 {
+    font-size: 3.5rem;
+}
+
+.projct .start {
+    background: url(img/start.png) no-repeat center / cover;
+    height: 490px;
+    position: relative;
+}
+
+.projct .start h1 {
+    color: #fff;
+    position: absolute;
+    bottom: 25%;
+    right: 11%;
+}
+
+.projct .start p {
+    line-height: 1.1;
+    font-size: 1.3rem;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+.projct .start p span {
+    color: #000;
+}
+
+.projct .start p span img {
+    position: absolute;
+    top: -6px;
+    left: -32px;
+}
+
+.projct .fondue {
+    background: #fff url(img/fondue.png) no-repeat 123% center / contain;
+    height: 490px;
+    position: relative;
+    color: #333;
+}
+
+.projct .fondue h1 {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.projct .fondue p {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.projct .fondue p:nth-child(2) {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+.projct .fondue p:nth-child(3) {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 42%;
+    left: 15%;
+    text-transform: uppercase;
+}
+
+.projct .fondue p:nth-child(3) img {
+    margin: 0 0 2px 0;
+}
+
+.projct .fondue p:last-child {
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    color: #ff5858;
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+}
+
+.projct .fondue p:last-child img {
+    padding: 2px 0;
+}
+
+.projct .row .potter {
+    background-color: #dfe0d9
+}
+
+.projct .potter {
+    background: url(img/potter.png) no-repeat right center / contain;
+    background-size: 55%;
+    padding: 0 25px;
+    margin: -20px 0 0 0;
+}
+
+.projct .potter h1 {
+    text-transform: uppercase;
+    width: 25%;
+}
+
+.projct .potter p {
+    line-height: 1;
+    font-size: 1.3rem;
+}
+
+.projct .potter p:nth-child(2) {
+    width: 45%;
+}
+
+.projct .potter p span {
+    text-transform: uppercase;
+}
+
+.projct .potter p:nth-child(3) {
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 155px;
+    cursor: pointer;
+}
+
+.projct .potter p:nth-child(3) img {
+    margin: 0 0 2px 0;
+}
+
+.projct .potter p:last-child {
+    font-size: 1.1rem;
+    text-align: center;
+    display: inline-block;
+    color: #ff5858;
+    position: relative;
+    left: 20%;
+}
+
+.projct .potter p:last-child img {
+    padding: 2px 0;
+}
+
+.projct .tabano {
+    padding: 230px 0 0 0;
+    background: #f7f7f3 url(img/tabano.png) no-repeat center top / 70%;
+    /*background-size: 70%;*/
+    text-transform: uppercase;
+    position: relative;
+}
+
+.projct .tabano h1,
+.projct .tabano p:nth-child(2) {
+    margin-left: 30px;
+}
+
+.projct .tabano p {
+    /*line-height: 1;*/
+    font-size: 1.3rem;
+}
+
+.projct .tabano p:nth-child(3) {
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 155px;
+    cursor: pointer;
+    line-height: 2;
+    position: absolute;
+    right: 70px;
+    bottom: 6%;
+}
+
+.projct .tabano p:nth-child(3) img {
+    margin: 0 0 2px 0;
+}
+
+.projct .tabano p:last-child {
+    font-size: 1.1rem;
+    text-align: center;
+    display: inline-block;
+    color: #ff5858;
+    position: absolute;
+    right: 20px;
+}
+
+.projct .tabano p:last-child img {
+    padding: 2px 0;
+}
+
+.projct .louis {
+    background: url(img/louis.png) no-repeat center / cover;
+    position: relative;
+    margin-top: -148px;
+    height: 440px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.projct .louis p {
+    font-size: 1.3rem;
+}
+
+.projct .louis h1,
+.projct .louis p {
+    margin-left: 30px;
+    line-height: 1;
+}
+
+.projct .louis .view {
+    margin: 40px 0 40px 30px;
+    font-size: 2rem;
+}
+
+.projct .louis p:last-child {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.projct .louis p:last-child span {
+    color: #ff5858;
+}
+
+.projct .p22 {
+    background: #eaeaea url(img/p22.png) no-repeat 20% bottom / contain;
+    background-size: 70%;
+    height: 440px;
+    position: relative;
+    margin-top: -148px;
+    display: table;
+}
+
+.projct .p22 div {
+    display: table-row;
+    position: relative;
+    top: 30px;
+}
+
+.projct .p22 p {
+    font-size: 1.3rem;
+}
+
+.projct .p22 h1,
+.projct .p22 p:nth-child(2) {
+    width: 210px;
+    margin: 10px 0 0 48%;
+}
+
+.projct .p22 .view,
+.projct .p22 p:last-child {
+    width: 170px;
+    text-align: center;
+}
+
+.projct .p22 h1,
+.projct .p22 p {
+    line-height: 1;
+}
+
+.projct .p22 .view {
+    margin: 40px 0 20px 0;
+    font-size: 2rem;
+}
+
+.projct .p22 p:last-child {
+    font-size: 1rem
+}
+
+.projct .p22 p:last-child span {
+    color: #ff5858;
+    font-size: 1rem
+}
+
+.projct .fiji {
+    background: #fff url(img/fiji.png) no-repeat left center / 50%;
+    /*background-size: 50%;*/
+}
+
+.projct .fiji div {
+    height: 270px;
+}
+
+.projct .fiji p {
+    line-height: 1;
+}
+
+.projct .fiji h1,
+.projct .fiji p {
+    width: 160px;
+    position: relative;
+    left: 60%;
+}
+
+.projct .fiji p:last-child {
+    font-size: 1rem;
+    text-align: center;
+    color: #ff5858;
+}
+
+.projct .sesann {
+    background: #fcfcfc url(img/sessan.png) no-repeat center 15% / contain;
+    background-size: 85%;
+    height: 300px;
+    position: relative;
+}
+
+.projct .sesann h1 {
+    margin: 170px 0 0 100px;
+    width: 120px;
+}
+
+.projct .sesann p {
+    display: inline-block;
+    line-height: 1;
+}
+
+.projct .sesann p:nth-child(2) {
+    margin: 0 0 0 100px;
+}
+
+.projct .sesann .view {
+    position: relative;
+    top: -38px;
+    left: 25px;
+    font-size: 2rem
+}
+
+.projct .sesann p:last-child {
+    position: relative;
+    top: -22px;
+    left: 55px;
+    font-size: 1rem;
+    text-align: center;
+    color: #ff5858
+}
+
+.projct .alessi {
+    background: url(img/alessi.png) no-repeat center / cover;
+    height: 300px;
+    position: relative;
+    line-height: 1;
+}
+
+.projct .alessi div {
+    width: 160px;
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+}
+
+.projct .alessi p:last-child {
+    text-align: center;
+    font-size: 1rem;
+    color: #ff5858;
+}
+
+.projct .alessi .view {
+    font-size: 2rem;
+}
+
+.projct .end {
+    background: url(img/start.png) no-repeat center / cover;
+    height: 300px;
+    color: #fff;
+    position: relative;
+}
+
+.projct .end p {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.projct .end span img {
+    position: absolute;
+    top: 18px;
+    left: -35px;
+}
+
+
+/* ^ */
+
+.preview {
+    min-height: 900px;
+    position: relative;
+}
+
+.single {
+    width: 760px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translate(-5%, -50%);
+    -ms-transform: translate(-5%, -50%);
+    -o-transform: translate(-5%, -50%);
+    transform: translate(-5%, -50%);
+}
+
+.single p:nth-child(2) {
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.single .krest {
+    background: url(img/delete_b.svg) no-repeat center / cover;
+    background-size: 30px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #222;
+    position: absolute;
+    top: -25%;
+    right: -25%;
+    cursor: pointer;
+}
+
+.single .single_social {
+    margin: 20px auto;
+    width: 125px;
+    font-size: 1.8rem;
+}
+
+.single .single_social a {
+    color: #333;
+    margin: 0 5px;
+}
+
+.single .single_social a:hover {
+    opacity: .8;
+}
+
+.owl-carousel {
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.owl-stage-outer {
+    height: 130px;
+}
+
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    color: #646464;
+    cursor: pointer;
+}
+
+.owl-carousel .owl-prev {
+    left: -40px;
+}
+
+.owl-carousel .owl-next {
+    right: -40px;
+}
+
+
+/* ^ */
+
+.studio,
+.designers,
+.news {
+    /*background: #e9eae2;*/
+    min-width: 320px;
+}
+
+.studio>div:first-child {
+    background: url(img/studio.png) no-repeat center / cover;
+    color: #fff;
+    height: 480px;
+    position: relative;
+}
+
+.studio>div:first-child h1,
+.news>div:first-child h1 {
+    position: absolute;
+    bottom: 150px;
+    right: 30%;
+}
+
+.studio>div:nth-child(2) {
+    padding: 60px 0px 0 60px;
+    font-size: 1.6rem
+}
+
+.studio>div:last-child {
+    padding: 60px 50px 0 0;
+}
+
+.studio>div:last-child div {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.studio>div:last-child p:nth-child(2) {
+    border-bottom: 1px solid #bfc0b9;
+    margin: 10px 0;
+}
+
+.studio>div:last-child span {
+    display: inline-block;
+    padding: 10px 10px 0 0;
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.designers>div:first-child {
+    padding: 0 20px 0 30px;
+}
+
+.designers div:last-child {
+    padding: 0;
+}
+
+.designers .cv {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 10px 0 20px 0;
+}
+
+.designers .cv>div {
+    color: #ff5000;
+}
+
+.designers .cv>div img {
+    margin-top: -3px;
+}
+
+.designers .cv a {
+    color: #ff5000;
+    padding: 0 5px;
+}
+
+.designers .cv a:hover {
+    opacity: .7
+}
+
+
+/* ^ */
+
+.news>div:first-child {
+    background: url(img/news.png) no-repeat center / cover;
+    color: #fff;
+    height: 480px;
+}
+
+.news .news1,
+.news .news2 {
+    height: 450px;
+    position: relative;
+}
+
+.news .news1 {
+    margin: 0 0 0 60px;
+}
+
+.news .news2 {
+    margin: 0 60px 0 0;
+}
+
+.news .news1 p,
+.news .news2 p {
+    color: #6a6969;
+    font-size: 1.2rem;
+}
+
+.news .news1 a,
+.news .news2 a {
+    color: #fd5000;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+
+/* ^ */
+
+footer * {}
+
+footer,
+#googleMap {
+    height: 600px;
+}
+
+footer p {
+    line-height: 1
+}
+
+footer .socil {
+    margin: 50px 0 0 50px;
+    width: 150px;
+}
+
+footer .socil i {
+    color: #7bcbc1;
+    width: 28px;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+footer .socil a:hover i {
+    color: #ebb240;
+}
+
+footer .logo,
+footer .adrss {
+    margin: 100px 0;
+    position: relative;
+}
+
+footer .logo p,
+footer .logo img {
+    margin-left: 30px;
+}
+
+footer .adrss {
+    color: #333333;
+}

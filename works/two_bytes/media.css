@@ -1,0 +1,193 @@
+/*==========  Desktop First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .search button {
+        font-size: 10pt !important;
+        padding: 14px 0 !important;
+        width: 100%;
+    }
+
+    .intro hr {
+        width: 15% !important;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+
+    .logo {
+        text-align: center;
+    }
+
+    .search label {
+        font: italic 10pt "varela_roundregular", sans-serif !important;
+        margin: 4% 5px 0 23px !important;
+    }
+
+    .select select {
+        width: 190px !important;
+    }
+
+    .intro hr {
+        width: 20% !important;
+    }
+
+    /*Disable Animation on Mobile Devices*/
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .navigate ul li {
+        margin: 5px 12px !important;
+    }
+
+    .search h1 {
+        font-size: 30pt !important;
+    }
+
+    .search button {
+        padding: 7px 0 !important;
+    }
+
+    ::-moz-placeholder {
+        font: italic 10pt/1.5 "varela_roundregular", sans-serif !important;
+        color: #a0a0a0;
+    }
+
+    :-webkit-input-placeholder {
+        font: italic 10pt/1.5 "varela_roundregular", sans-serif !important;
+        color: #a0a0a0;
+    }
+
+    .search input[type=text] {
+        padding: 5px 0 !important;
+    }
+
+    .search input[type=text] {
+        text-indent: 2px !important;
+    }
+
+    .search button {
+        font-size: 9pt !important;
+        padding: 6px 0 !important;
+        width: 100%;
+    }
+
+    .intro hr {
+        width: 30% !important;
+    }
+
+    .subscribe input {
+        width: 90% !important;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    .select select {
+        width: 160px !important;
+        padding: 5px 0 !important;
+    }
+
+    .search button i {
+        font-size: 9pt !important;
+        padding: 4px 0 !important;
+    }
+
+    .search label {
+        font-size: 9pt !important;
+    }
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/*Bootstrap media, проверка работоспособности*/
+
+
+/* Extra small devices (phones, less than 768px) */
+
+
+/* No media query since this is the default in Bootstrap */
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: @screen-sm-min) {
+    ...
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: @screen-md-min) {
+    ...
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: @screen-lg-min) {
+    ...
+}

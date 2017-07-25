@@ -1,0 +1,244 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.circle {
+		width: 220px !important;
+		height: 220px !important;
+	}
+
+	.comment {
+		padding: 2% 25px !important;
+		margin: 5% 0;
+	}
+
+	.comment p:first-child {
+		font-size: 16pt !important;
+	}
+
+	.comment p:last-child {
+		font-size: 12pt !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.logo {
+		text-align: center;
+	}
+
+	.latestProj {
+		background-position: -200px 100px !important;
+	}
+
+	.cult_val hr {
+		bottom: 200px !important;
+	}
+
+	.circle {
+		width: 180px !important;
+		height: 180px !important;
+	}
+
+	.comment {
+		padding: 2% 5px !important;
+	}
+
+	.comment p:first-child {
+		font-size: 12pt !important;
+	}
+
+	.comment p:last-child {
+		font-size: 9pt !important;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.title {
+		background-position: center right !important;	
+	}
+
+	.justRelax {
+		background-position: center right !important;
+	}
+
+	.justRelax h1 {
+		font-size: 25pt !important;
+	}
+
+	.justRelax p,
+	.justRelax ul {
+		font-size: 10pt !important;
+	}
+
+	.latestProj {
+		background-position: -500px 100px !important;
+	}
+
+	.textpadd p {
+		font-size: 11pt !important;
+		line-height: 1;
+	}
+
+	.textpadd h4 {
+		font-size: 13pt !important;
+	}
+
+	.cult_val hr {
+		display: none;
+	}
+
+	.circle {
+		width: 140px !important;
+		height: 140px !important;
+		margin: 0 auto;
+	}
+
+	.comment p:first-child {
+		font-size: 10pt !important;
+	}
+
+	.comment p:last-child {
+		font-size: 8pt !important;
+	}
+
+	.footer_down {
+		text-align: center
+	}
+
+	.social {
+		height: 40px;
+		display: inline-block;
+	}
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.title h1 {
+		font-size: 35pt !important;
+	}
+
+	.title p {
+		font-size: 13pt !important;
+	}
+
+	.title button {
+		padding: 15px 35px 15px 35px;
+		font-size: 12px !important;
+	}
+
+	.latestProj {
+		background: url(img/oipad.png) no-repeat !important; 
+		background-position: -100px bottom !important;
+	}
+
+	.textpadd ul div {
+		width: 100%;
+	}
+
+	.textpadd p {
+		font-size: 10pt !important;
+		text-align: center; 
+	}
+
+	.textpadd h4 {
+		text-align: center; 
+		font-size: 12pt !important;
+	}
+
+	.textpadd img {
+		margin: 0 auto;
+		padding: 10px 0 0 0 !important;
+		display: block;
+	}
+
+	.latestProj a {
+		margin: 50px 0 0 0;
+	}
+
+	.rtalk h1 {
+		font-size: 25pt;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/*.textpadd h4 {
+		font-size: 11pt !important;
+	}
+
+	.textpadd p {
+		font-size: 9pt !important;
+		display: inline-block;
+	}*/
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.navigate ul {
+		width: 450px;
+		text-align: center;
+		margin: 6px auto !important;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/*Bootstrap media, проверка работоспособности*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }

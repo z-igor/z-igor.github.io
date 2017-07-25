@@ -1,0 +1,387 @@
+* {
+    /*border: 1px solid;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.blue {
+    background: #4acaff;
+}
+
+header {
+    min-height: 800px;
+    min-width: 319px;
+    position: relative;
+}
+
+.nav {
+    padding: 50px 0;
+}
+
+.nav li {
+    float: left;
+}
+
+.logo {
+    line-height: .8;
+}
+
+#ltop {
+    font-size: 30px;
+    color: #fff;
+}
+
+#ltop span {
+    font-weight: bolder;
+    font-size: 31px;
+    text-shadow: 0px 0px 1px #fff;
+}
+
+#lbottom {
+    color: #fff;
+    letter-spacing: 7px;
+    text-indent: 5px;
+    font-size: 10pt;
+}
+
+.navigate ul {
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.navigate ul li {
+    margin: 0 12px;
+}
+
+.navigate ul li:first-child {
+    margin-left: 0;
+}
+
+.navigate ul li:last-child {
+    margin-right: -10px;
+}
+
+.navigate ul li a {
+    color: #fff;
+    padding: 5px 0;
+}
+
+.navigate ul li a:hover {
+    border-top: 3px solid #4acaff;
+}
+
+
+/* ^ */
+
+.search {
+    margin-top: 130px;
+}
+
+.search h1 {
+    font: italic 45pt "varela_roundregular", sans-serif;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.search input[type=text] {
+    width: 100%;
+    padding: 13px 0;
+    text-indent: 20px;
+    border-radius: 2px;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 4px solid #e2e2e2;
+    border-right: 0;
+    margin-bottom: 20px;
+}
+
+.search button {
+    padding: 11px 40px;
+    background: #4acaff;
+    color: #fff;
+    border-radius: 2px;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 4px solid #3baedd;
+    border-right: 0;
+    font: italic 14pt "varela_roundregular", sans-serif;
+}
+
+.search button i {
+    font-size: 13pt;
+    /*vertical-align: middle;*/
+}
+
+header ::-moz-placeholder {
+    font: italic 13pt "varela_roundregular", sans-serif;
+    color: #a0a0a0;
+}
+
+header :-webkit-input-placeholder {
+    font: italic 14pt "varela_roundregular", sans-serif;
+    color: #a0a0a0;
+}
+
+.search label {
+    color: #fff;
+    font: italic 10pt "varela_roundregular", sans-serif;
+    margin: 4% 50px 0 23px;
+    position: relative;
+    text-shadow: 0px 0px 1px #fff;
+    vertical-align: middle;
+}
+
+.search input[type=checkbox] {
+    display: none;
+}
+
+.search label:before {
+    position: absolute;
+    content: "";
+    left: -20px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 1px;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 2px solid #e2e2e2;
+}
+
+input[type=checkbox]:checked+label:before {
+    content: '\f00c';
+    font: 8pt FontAwesome;
+    line-height: 16px;
+    text-align: center;
+    color: #a0a0a0;
+}
+
+.check {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.search .select {
+    font: italic 10pt "varela_roundregular", sans-serif;
+}
+
+.select {
+    position: relative;
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    margin: 10px;
+    /*left: 170px;*/
+}
+
+.select select {
+    background: #fff;
+    color: #b0b0b0;
+    font-size: inherit;
+    padding: .5em 0 .5em 0;
+    margin: 0 -10px 0 0;
+    /*border: none;*/
+    width: 260px;
+    border-radius: 3px;
+    text-indent: 2px;
+    -webkit-appearance: button;
+    -moz-appearance: none;
+}
+
+.select:before,
+.select:after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.select::after {
+    content: "\f107";
+    height: 1em;
+    color: #b0b0b0;
+    font: 10pt FontAwesome;
+    line-height: 1;
+    right: 2px;
+    top: 50%;
+    margin: -.5em 0 0 0;
+    padding: 0 0 0 5px;
+}
+
+.select::before {
+    width: 1.5em;
+    right: 0;
+    top: 10px;
+    bottom: 10px;
+    border-left: 1px solid #c0c0c0;
+}
+
+.select select[disabled] {
+    color: rgba(0, 0, 0, .3);
+}
+
+.select select[disabled]::after {
+    color: rgba(0, 0, 0, .1);
+}
+
+
+/* ^ */
+
+.intro,
+.subscribe,
+footer {
+    min-width: 319px;
+    border-top: 9px solid transparent;
+    -webkit-border-image: url(img/headborder.png) 100 round;
+    -o-border-image: url(img/headborder.png) 100 round;
+    border-image: url(img/headborder.png) 100 round;
+}
+
+.intro .row {
+    padding: 60px 0;
+}
+
+.intro h1,
+.intro h3,
+.intro p {
+    font-family: "varela_roundregular";
+    color: #585858;
+}
+
+.intro h1 {
+    font-size: 45px;
+}
+
+.intro h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.intro hr {
+    border: 2px solid #4acaff;
+    width: 10%;
+}
+
+.intro p {
+    font-size: 14pt;
+}
+
+.intro button {
+    border: 2px solid #4acaff;
+    color: #4acaff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    background: #fff;
+    font-weight: bold;
+
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.intro button:hover {
+    background: #4acaff;
+    color: #fff;
+}
+
+.intro .row div:last-child {
+    margin-top: 50px;
+}
+
+
+/* ^ */
+
+.subscribe .row {
+    padding: 100px 0;
+}
+
+.subscribe,
+.subscribe input[type=email] {
+    background: #131c25;
+}
+
+.subscribe h3 {
+    color: #fff;
+    font: 16pt "varela_roundregular", sans-serif;
+    margin-bottom: 30px;
+}
+
+.subscribe input {
+    border: 1px solid #4acaff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 0;
+    width: 380px;
+    text-indent: 10px;
+}
+
+.subscribe input[type=email]:valid {
+    /*content: "\f0e0";
+	font: 12pt FontAwesome;*/
+    background: url(img/note.png) no-repeat right 10px center;
+    background-size: 14px;
+}
+
+.subscribe input[type=email]:invalid {
+    background: url(img/cross.png) no-repeat right 10px center;
+    background-size: 14px;
+}
+
+.subscribe ::-moz-placeholder {
+    font: bolder italic 10pt/1.5 "varela_roundregular", sans-serif !important;
+    color: #fff;
+    opacity: 1;
+}
+
+.subscribe:-webkit-input-placeholder {
+    font: bolder italic 10pt/1.5 "varela_roundregular", sans-serif !important;
+    color: #fff;
+    opacity: 1;
+}
+
+
+/* ^ */
+
+footer .row {
+    padding: 20px 0;
+}
+
+#email {
+    color: #7a7a7a;
+    font: bold 10pt "varela_roundregular", sans-serif;
+    /*vertical-align: middle;*/
+}
+
+#email i {
+    color: #4acaff;
+    font-size: 14pt;
+}
+
+#copyright {
+    color: #a6a5a5;
+    font: 10pt "varela_roundregular", sans-serif;
+}
+
+footer span {
+    color: #7a7a7a;
+    font: bold 10pt "varela_roundregular", sans-serif;
+}
+
+.twitter-share-button {
+    display: inline-block;
+}
