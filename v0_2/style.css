@@ -386,5 +386,8 @@ section::-moz-scrollbar {
     -webkit-transition: all 2s linear 0s;
     -o-transition: all 2s linear 0s;
     transition: all 2s linear 0s;
-    overflow: hidden;
+}
+
+.scrl_n {
+     overflow: hidden;
 }
