@@ -1,4 +1,4 @@
-// (function() {
+(function() {
 
 'use strict';
 
@@ -25,8 +25,12 @@ if (videoSupport) {
 
     if (document.addEventListener) {
         videoContainer.forEach(function(item) {
+             var span = document.createElement('span');
             var video = item.querySelector('.video');
             var playpause = item.querySelector('.playpause');
+
+            span.className = 'counts';
+            item.appendChild(span);
 
             video.style.width = '200px';
             video.controls = false;
@@ -55,6 +59,9 @@ if (videoSupport) {
 
         });
     }
+    for (var i = 0; i < videoContainer.length; i++) {
+        videoContainer[i].querySelector('span').textContent = i;
+    }
 }
 
-// })();
+})();
