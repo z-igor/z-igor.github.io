@@ -12,6 +12,10 @@ html {
     width: 100%;
 }
 
+body {
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/memphis-colorful.png");
+}
+
 .grid {
     position: relative;
 }
