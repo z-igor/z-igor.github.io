@@ -66,3 +66,15 @@ html {
 .playpause:hover {
     opacity: 1;
 }
+
+.counts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 5px;
+    background: rgba(0,0,0,.5);
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    font: bold 14px Calibri, sans-serif;
+}
