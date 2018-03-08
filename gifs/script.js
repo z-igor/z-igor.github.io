@@ -28,27 +28,33 @@
                 var video = item.querySelector('.video');
                 var playpause = item.querySelector('.playpause');
 
+                video.addEventListener('loadeddata', function() {
+
+                    if (video.readyState >= 2) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+
+                });
+
+                playpause.innerHTML = '&nbsp;<img src="player-play.png" alt="Play" draggable="false">';
                 span.className = 'counts';
                 item.appendChild(span);
 
                 video.style.width = '200px';
                 video.controls = false;
 
-                playpause.addEventListener('mouseup', function(e) {
-                    if (video.paused || video.ended)
-                        video.play();
-                    else
-                        video.pause();
-                });
-
-                video.addEventListener('click', function(e) {
+                item.addEventListener('mouseup', function(e) {
                     if (video.played) {
+                        span.style.opacity = 1;
                         playpause.style.opacity = 1;
                     }
 
                     if (e.which == 1) {
                         if (video.paused || video.ended) {
                             playpause.style.opacity = 0;
+                            span.style.opacity = 0
                             video.play();
                         } else {
                             video.pause();
