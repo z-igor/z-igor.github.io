@@ -10,7 +10,7 @@
 
         var masonry = new Masonry(grid, {
             itemSelector: '.grid-item',
-            columnWidth: 50,
+            columnWidth: 20,
             percentPosition: true,
             gutter: 50
         });
@@ -66,6 +66,7 @@
 
         for (var i = 0; i < videoContainer.length; i++) {
             videoContainer[i].querySelector('span').textContent = i + 1;
+            videoContainer[i].querySelector('video').poster = 'gifs/' + (i + 1) + '.jpg';
         }
     }
 
