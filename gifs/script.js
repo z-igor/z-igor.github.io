@@ -66,7 +66,7 @@
 
         for (var i = 0; i < videoContainer.length; i++) {
             videoContainer[i].querySelector('span').textContent = i + 1;
-            videoContainer[i].querySelector('video').poster = 'gifs/' + (i + 1) + '.jpg';
+            videoContainer[i].querySelector('video').poster = 'gifs/' + (i + 1) + '.jpeg';
         }
     }
 
