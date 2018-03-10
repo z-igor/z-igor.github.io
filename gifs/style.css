@@ -20,7 +20,10 @@ body {
     position: relative;
 }
 
-.grid-item {}
+.grid-item {
+    width: 200px;
+    height: 200px;
+}
 
 .grid-item--width2 {
     width: 200px;
@@ -30,6 +33,7 @@ body {
 .video {
     border: 1px solid silver;
     border-radius: 2px;
+    width: 200px;
     cursor: pointer;
 }
 
