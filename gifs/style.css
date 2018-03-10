@@ -40,6 +40,7 @@ body {
 .playpause {
     border: 1px solid lightblue;
     border-radius: 50px;
+    display: inline-block;
     width: 36px;
     height: 36px;
     position: absolute;
@@ -63,6 +64,7 @@ body {
 
 .playpause img {
     width: 22px;
+    vertical-align: middle;
 }
 
 .playpause:hover {
