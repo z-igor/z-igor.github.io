@@ -18,6 +18,11 @@ body {
 
 .grid {
     position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .grid-item {
@@ -34,6 +39,7 @@ body {
     border: 1px solid silver;
     border-radius: 2px;
     width: 200px;
+    height: 200px;
     cursor: pointer;
 }
 
