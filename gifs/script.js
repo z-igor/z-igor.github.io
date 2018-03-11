@@ -47,16 +47,37 @@
 
                     var video = this.querySelector('video');
 
+                    function pauseAll(elem) {
+                        for (var i = 0; i < videoContainer.length; i++) {
+                            var vid = videoContainer[i].querySelector('video');
+                            if (vid) {
+                                if (vid == elem) {
+                                    continue;
+                                }
+                                if (vid.played.length > 0 && !vid.paused) {
+                                    vid.pause();
+                                }
+                            }
+                        }
+                    }
+
                     if (video.played) {
                         span.style.opacity = 1;
                         playpause.style.opacity = 1;
                     }
 
                     if (evt.which == 1) {
+                        for (var i = 0; i < videoContainer.length; i++) {
+                            if (videoContainer[i].querySelector('video')) {
+                                videoContainer[i].querySelector('video').addEventListener('play', function() {
+                                    pauseAll(this);
+                                });
+                            }
+                        }
+
                         if (video.paused || video.ended) {
                             playpause.style.opacity = 0;
                             span.style.opacity = 0;
-
                             video.play();
                         } else {
                             video.pause();
@@ -66,5 +87,4 @@
             });
         }
     }
-
 })();
