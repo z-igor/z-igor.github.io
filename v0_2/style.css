@@ -208,14 +208,20 @@ body::-moz-scrollbar-thumb {
 
 .article span {
     display: inline-block;
-    font: bold 1.8rem 'ralewayextrabold', sans-serif;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+/*     font-family: 1.8rem 'ralewayextrabold', sans-serif; */
     margin-right: 25px;
 }
 
 .article a {
     color: #1956FF;
     display: inline-block;
-    font: bold 1.8rem 'ralewayextrabold', sans-serif;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+/*     font: bold 1.8rem 'ralewayextrabold', sans-serif; */
     margin-right: 25px;
     text-decoration: none;
 }
@@ -256,12 +262,19 @@ body::-moz-scrollbar-thumb {
 .content {
     padding: 0 15px 15px;
     color: #fff;
-    font: 15px/1.6 'ralewaythin', Calibri, sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.6;
+/*     font: 15px/1.6 'ralewaythin', Calibri, sans-serif; */
 }
 
 .content a {
     color: #fff;
-    font: 12pt "exodemibold";
+    font-family: 'Exo', sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+/*     font: 12pt "exodemibold"; */
 }
 
 section {
