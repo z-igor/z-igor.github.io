@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mini-constructor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="control__wrap">
+            <div class="control">
+                <div class="control__logo"></div>
+                <div class="control__addition">
+                    <p class="control__addition__create">Create</p>
+                    <ul>
+                        <li class="control__addition__header"></li>
+                        <li class="control__addition__cta"></li>
+                        <li class="control__addition__picture"></li>
+                        <li class="control__addition__description"></li>
+                        <li class="control__addition__slideshow"></li>
+                        <li class="control__addition__comments"></li>
+                        <li class="control__addition__footer"></li>
+                    </ul>
+                    <span class="control__addition__remove element__draggable" draggable="true" data-type="remove"></span>
+                </div>
+                <div class="control__elements">
+                    <div class="control__element__content element__draggable" draggable="true" data-anchor='0' data-type="header">
+                        <label class="control__element-name">Header</label>
+                        <input type="text" class="control__element-textfield">
+                        <span class="control__element-lock control__element-lock-selected"></span>
+                        <span class="control__element-drag"></span>
+                    </div>
+                    <div class="control__element__content element__draggable" draggable="true" data-anchor='1' data-type="cta">
+                        <label class="control__element-name">call of active</label>
+                        <input type="text" class="control__element-textfield">
+                        <span class="control__element-lock"></span>
+                        <span class="control__element-drag"></span>
+                    </div>
+                    <div class="control__element__content element__draggable" draggable="true" data-anchor='2' data-type="picture">
+                        <label class="control__element-name">picture</label>
+                        <input type="text" class="control__element-textfield">
+                        <span class="control__element-lock"></span>
+                        <span class="control__element-drag"></span>
+                    </div>
+                    <div class="control__element__content element__draggable" draggable="true" data-anchor='3' data-type="description">
+                        <label class="control__element-name">description</label>
+                        <input type="text" class="control__element-textfield">
+                        <span class="control__element-lock"></span>
+                        <span class="control__element-drag"></span>
+                    </div>
+                    <div class="control__element__content element__draggable" draggable="true" data-anchor='4' data-type="slideshow">
+                        <label class="control__element-name">slideshow</label>
+                        <input type="text" class="control__element-textfield">
+                        <span class="control__element-lock"></span>
+                        <span class="control__element-drag"></span>
+                    </div>
+                    <div class="control__element__content element__draggable" draggable="true" data-anchor='5' data-type="comments">
+                        <label class="control__element-name">comments</label>
+                        <input type="text" class="control__element-textfield">
+                        <span class="control__element-lock"></span>
+                        <span class="control__element-drag"></span>
+                    </div>
+                    <div class="control__element__content element__draggable" draggable="true" data-anchor='6' data-type="footer">
+                        <label class="control__element-name">Footer</label>
+                        <input type="text" class="control__element-textfield">
+                        <span class="control__element-lock control__element-lock-selected"></span>
+                        <span class="control__element-drag"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="preview">
+            <div class="preview__blocks"></div>
+        </div>
+        <template id="template">
+            <!-- <div class='control__elements'> -->
+            <div class="control__element__content element__draggable" draggable="true" data-anchor='0' data-type="header">
+                <label class="control__element-name">Header</label>
+                <input type="text" class="control__element-textfield">
+                <span class="control__element-lock"></span>
+                <span class="control__element-drag"></span>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="preview__blocks"> -->
+            <div class="preview__block" data-follower='0'>
+                <span class="preview__block__header"></span>
+            </div>
+            <!-- </div> -->
+        </template>
+    </main>
+    <script src="js/control.js"></script>
+    <script src="js/preview.js"></script>
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</body>
+
+</html>
