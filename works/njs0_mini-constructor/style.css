@@ -32,8 +32,7 @@ body {
 main {
     width: 100%;
     max-height: 100%;
-    font-family: Roboto;
-    /* нужно подключить шрифты Roboto! */
+    font-family: 'Roboto', sans-serif;
 }
 
 main>div {
@@ -283,8 +282,6 @@ main>div {
     background-repeat: no-repeat;
     -webkit-background-size: 180px;
     background-size: 180px;
-
-    /*border: .02px solid;*/
 }
 
 [data-type='header']:after {
@@ -439,17 +436,9 @@ main>div {
     /*background-position: center bottom;*/
     opacity: 1;
 }
-
-
-
-
 /*
 ---------------------------------------------------------------
----------------------------------------------------------------
----------------------------------------------------------------
----------------------------------------------------------------
 */
-
 .preview {
     width: calc( 1320px - 400px);
     /*margin-left: 30%;*/
