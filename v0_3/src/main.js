@@ -1,3 +1,5 @@
+import './styles/style.scss';
+
 const wrapper = document.querySelector('.wrap');
 const cards = wrapper.querySelectorAll('.card');
 
