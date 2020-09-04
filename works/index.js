@@ -25,8 +25,8 @@ export const data = [{
     stack: ['HTML', 'CSS', 'JS'],
   },
   {
-    priority: 1,
     id: 'p2',
+    priority: 1,
     title: "Creative+",
     description: "Today’s neat little web design template is Creative+ – A minimal blog design layout. This clean and minimal design is ready to take straight into WordPress or your CMS of choice. Download this free PSD Blog template web design psd and get blogging!",
     source: "../works/creative_plus/index.html",
@@ -37,8 +37,8 @@ export const data = [{
     stack: ['HTML', 'CSS', 'JS'],
   },
   {
-    priority: 1,
     id: 'p3',
+    priority: 1,
     title: "Dsgn",
     description: "description",
     source: "source",
@@ -50,8 +50,7 @@ export const data = [{
   },
 ];
 
-/* 
-{
+/* {
   id: "p4",
   title: "demo",
   description: "demo",
@@ -60,5 +59,4 @@ export const data = [{
   coverOrig: "demo",
   offUrl: "demo",
   stack: ['HTML', 'CSS', 'JS'],
-} 
-*/
+} */
