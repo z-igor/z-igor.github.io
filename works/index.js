@@ -25,6 +25,7 @@ export const data = [{
     stack: ['HTML', 'CSS', 'JS'],
   },
   {
+    priority: 1,
     id: 'p2',
     priority: 1,
     title: "Creative+",
@@ -37,6 +38,7 @@ export const data = [{
     stack: ['HTML', 'CSS', 'JS'],
   },
   {
+    priority: 1,
     id: 'p3',
     priority: 1,
     title: "Dsgn",

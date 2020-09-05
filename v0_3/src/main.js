@@ -14,9 +14,11 @@ const app = new Vue({
       data: data.map(el => ({
         ...el,
         hover: false,
-        styles: {},
+        stylesImg: {},
       })),
       covers,
+      preloader: true,
+      isDestroy: null,
     }
   },
   methods: {
@@ -28,7 +30,7 @@ const app = new Vue({
 
       if (evt.className === 'img-item') {
         if (evt.height >= 990) {
-          duration = 6
+          duration = 6;
         }
 
         if (evt.height <= 790) {
@@ -43,10 +45,10 @@ const app = new Vue({
           duration = 1
         }
 
-        card.styles = {
+        card.stylesImg = {
           transitionDuration: duration + 's',
           transform: `translate(0, -${evt.height - 200}px)`,
-        }
+        };
       }
     },
     onMouseLeave(ev, card) {
@@ -55,12 +57,19 @@ const app = new Vue({
       card.hover = false;
 
       if (evt.className === 'card') {
-        card.styles = {
+        card.stylesImg = {
           transitionDuration: '1s',
           transform: `translate(0, 0)`,
         }
       }
     },
   },
-  mounted() {}
+  mounted() {
+    this.isDestroy = setTimeout(() => {
+      this.preloader = false;
+    }, 500);
+  },
+  destroyed() {
+    this.isDestroy = null;
+  }
 });
