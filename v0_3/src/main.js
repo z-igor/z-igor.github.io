@@ -1,7 +1,6 @@
 import './styles/style.scss';
 import {
   data,
-  covers
 } from '../../works';
 
 Vue.config.devtools = true;
@@ -16,7 +15,6 @@ const app = new Vue({
         hover: false,
         stylesImg: {},
       })),
-      covers,
       preloader: true,
       isDestroy: null,
     }
