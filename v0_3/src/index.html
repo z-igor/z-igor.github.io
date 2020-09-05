@@ -11,19 +11,22 @@
         class="card"
         v-for="card in data"
         :key="card"
-        @mouseover="toggleMouseOverLeave(card, true)"
-        @mouseleave="toggleMouseOverLeave(card, false)"
+        @mouseover="onMouseOver($event, card)"
+        @mouseleave="onMouseLeave($event, card)"
       >
         <div class="preview">
           <div class="preview__img">
             <img
-              :src="card.cover"
-              alt="Preview"
+              class="img-item"
+              :class="{scroll: card.scroll}"
+              :src="covers[card.cover]"
+              :alt="card.title"
+              :style="card.styles"
             />
           </div>
         </div>
         <div class="title">
-          <a href="&" class="title-item title__link"> {{card.title}} </a>
+          <a :href="card.source" class="title-item title__link"> {{card.title}} </a>
         </div>
         <ul class="stack" :class="{'stack--show': card.hover}">
           <li v-for="stackElm in card.stack" :key="stackElm">

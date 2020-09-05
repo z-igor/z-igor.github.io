@@ -1,22 +1,10 @@
 import './styles/style.scss';
-import data from '../../works';
+import {
+  data,
+  covers
+} from '../../works';
 
 Vue.config.devtools = true;
-
-const wrapper = document.getElementById('app');
-const cards = wrapper.querySelectorAll('.card');
-
-cards.forEach(card => {
-  let stacks = card.querySelector('.stack');
-
-  card.addEventListener('mouseenter', (ev) => {
-    stacks.className = 'stack stack--show';
-  });
-
-  card.addEventListener('mouseleave', (ev) => {
-    stacks.className = 'stack stack--hide';
-  });
-});
 
 const app = new Vue({
   el: '#app',
@@ -26,22 +14,53 @@ const app = new Vue({
       data: data.map(el => ({
         ...el,
         hover: false,
-        images: [],
+        styles: {},
       })),
+      covers,
     }
   },
   methods: {
-    toggleMouseOverLeave(card, h) {
-      card.hover = h;
+    onMouseOver(ev, card) {
+      let evt = ev.target;
+      let duration = null;
+
+      card.hover = true;
+
+      if (evt.className === 'img-item') {
+        if (evt.height >= 990) {
+          duration = 6
+        }
+
+        if (evt.height <= 790) {
+          duration = 4
+        }
+
+        if (evt.height <= 590) {
+          duration = 3
+        }
+
+        if (evt.height <= 290) {
+          duration = 1
+        }
+
+        card.styles = {
+          transitionDuration: duration + 's',
+          transform: `translate(0, -${evt.height - 200}px)`,
+        }
+      }
     },
-    importAll(r) {
-      r.keys().forEach(key => (this.images.push({
-        pathLong: r(key),
-        pathShort: key
-      })));
+    onMouseLeave(ev, card) {
+      let evt = ev.target;
+
+      card.hover = false;
+
+      if (evt.className === 'card') {
+        card.styles = {
+          transitionDuration: '1s',
+          transform: `translate(0, 0)`,
+        }
+      }
     },
   },
-  mounted() {
-    this.importAll(require.context("../../works/blaz/", true, /\.jpg$/));
-  }
+  mounted() {}
 });

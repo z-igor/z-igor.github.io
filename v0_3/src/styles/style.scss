@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+
 $speed: 1s / 20;
 $offset: -24px;
 $bgBody: #f2f2f2;
+
+@mixin f400 {
+  font-family: "Ubuntu", Tahoma, Helvetica;
+  font-weight: 400;
+}
+
+@mixin f400i {
+  @include f400;
+  font-style: italic;
+}
+
+@mixin f700 {
+  @include f400;
+  font-weight: 700;
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
  * v2.0 | 20110126
@@ -136,6 +153,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* end Reset css */
 
 body {
@@ -147,6 +165,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
+  padding: 0 15px
 }
 
 .card {
@@ -177,12 +196,15 @@ body {
 
 .preview__img {
   border-radius: 5px;
-  height: 150px;
+  max-height: 200px;
   overflow: hidden;
 }
 
-.preview__img img {
-  height: 100%;
+.img-item {
+  width: 100%;
+  transition: all 1s linear 0s;
+  position: relative;
+  top: 0;
 }
 
 .bg {
@@ -199,6 +221,7 @@ body {
 }
 
 .title {
+  @include f700;
   margin-bottom: 10px;
 }
 
@@ -230,6 +253,7 @@ body {
 }
 
 .stack {
+  @include f400;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;

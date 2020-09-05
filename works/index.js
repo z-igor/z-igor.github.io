@@ -59,4 +59,5 @@ export const data = [{
   coverOrig: "demo",
   offUrl: "demo",
   stack: ['HTML', 'CSS', 'JS'],
-} */
+} 
+*/
