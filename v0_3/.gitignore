@@ -1,7 +1,11 @@
 .DS_Store
 node_modules
+<<<<<<< HEAD
 /dist
 
+=======
+/public
+>>>>>>> 858e597... Updated files
 
 # local env files
 .env.local
