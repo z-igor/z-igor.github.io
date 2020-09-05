@@ -3,6 +3,7 @@
 $speed: 1s / 20;
 $offset: -24px;
 $bgBody: #f2f2f2;
+$alpha: random(100)/100;
 
 @mixin f400 {
   font-family: "Ubuntu", Tahoma, Helvetica;
@@ -160,13 +161,99 @@ body {
   background-color: $bgBody;
 }
 
+#app {
+  position: relative;
+}
+
 .wrap {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 15px
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 }
+
+.header {
+  @include f400;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin: 10px 15px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: inset 0px -1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header-versions span {
+  padding: 0 5px;
+}
+
+.header-contacts {
+  line-height: 1.6;
+  font-size: 0.8em;
+}
+
+/* start preloader */
+.lds-ring {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fcf;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: grey transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* end preloader */
 
 .card {
   position: relative;
@@ -185,18 +272,19 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 10px;
   background-color: silver;
+  border-radius: 10px;
 }
 
 .preview {
   position: relative;
   margin-bottom: 10px;
+  max-height: 400px;
 }
 
 .preview__img {
   border-radius: 5px;
-  max-height: 200px;
+  height: 200px;
   overflow: hidden;
 }
 
