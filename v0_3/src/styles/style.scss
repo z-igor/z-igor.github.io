@@ -173,6 +173,10 @@ body {
   padding: 0 10px;
 }
 
+.wrap.hide {
+  display: none;
+}
+
 .header {
   @include f400;
   display: flex;

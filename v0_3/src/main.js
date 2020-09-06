@@ -1,9 +1,17 @@
 import './styles/style.scss';
 import {
   data,
+  covers
 } from '../../works';
 
-Vue.config.devtools = true;
+const wrap = document.querySelector('.wrap');
+
+try {
+  Vue.config.devtools = true;
+} catch (error) {
+  console.log('Vue is not defined');
+  wrap.classList.add('hide');
+}
 
 const app = new Vue({
   el: '#app',
@@ -17,6 +25,7 @@ const app = new Vue({
       })),
       preloader: true,
       isDestroy: null,
+      covers
     }
   },
   methods: {
@@ -63,9 +72,9 @@ const app = new Vue({
     },
   },
   mounted() {
-    this.isDestroy = setTimeout(() => {
+    window.onload = (e) => {
       this.preloader = false;
-    }, 500);
+    };
   },
   destroyed() {
     this.isDestroy = null;
