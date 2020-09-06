@@ -1,8 +1,8 @@
-import './styles/style.scss';
 import {
   data,
   covers
 } from '../../works';
+import './styles/style.scss';
 
 Vue.config.devtools = true;
 
