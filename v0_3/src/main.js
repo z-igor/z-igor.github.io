@@ -1,7 +1,7 @@
-import './styles/style.scss';
 import {
   data,
 } from '../../works';
+import './styles/style.scss';
 
 Vue.config.devtools = true;
 
