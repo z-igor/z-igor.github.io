@@ -10,7 +10,7 @@ function importAllImages(r) {
   return images;
 }
 
-export const covers = importAllImages(require.context('./asserts', false, /\.(png|jpe?g|svg)$/));
+export const covers = importAllImages(require.context('./assets', false, /\.(png|jpe?g|svg)$/));
 
 export const data = [{
     id: 'p1',
