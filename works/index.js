@@ -1,6 +1,18 @@
-export const data = [{
-    id: 'p1',
+export const data = [
+  {
+    id: 'p0',
     priority: 1,
+    title: "Алексеич бригадир",
+    description: "Пет-проект",
+    source: "https://z-igor.github.io/foreman_gh-ps/#/",
+    cover: '../../works/alexeich_b/demo.png',
+    coverBig: "",
+    offUrl: "https://github.com/z-igor/foreman_gh-ps/",
+    stack: ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Router'],
+  },
+  {
+    id: 'p1',
+    priority: 2,
     title: "Mini constructor",
     description: "This mini constructor was developed via native javascript for view of first look",
     source: "../../works/njs0_mini-constructor/index.html",
@@ -11,7 +23,7 @@ export const data = [{
   },
   {
     id: 'p2',
-    priority: 1,
+    priority: 3,
     title: "Creative+",
     description: "Today’s neat little web design template is Creative+ – A minimal blog design layout. This clean and minimal design is ready to take straight into WordPress or your CMS of choice. Download this free PSD Blog template web design psd and get blogging!",
     source: "../../works/creative_plus/index.html",
@@ -22,7 +34,7 @@ export const data = [{
   },
   {
     id: 'p3',
-    priority: 1,
+    priority: 3,
     title: "Dsgn",
     description: "DSGN - Free .PSD Template",
     source: "../../works/dsgn/index.html",
@@ -33,7 +45,7 @@ export const data = [{
   },
   {
     id: 'p4',
-    priority: 1,
+    priority: 3,
     title: "Gift shop",
     description: "Giftshop is a, you’ve guessed it, template for gift shops. Flat and modern design will ensure your products are showcased in a unique way.",
     source: "../../works/gift_shop/index.htm",
@@ -44,7 +56,7 @@ export const data = [{
   },
   {
     id: 'p5',
-    priority: 1,
+    priority: 3,
     title: "Golden",
     description: "A clean, stylish, one page Bootstrap portfolio theme perfect for your agency or small business.",
     source: "../../works/golden_theme/index.html",
@@ -55,7 +67,7 @@ export const data = [{
   },
   {
     id: 'p6',
-    priority: 1,
+    priority: 3,
     title: "Wise advice 1C",
     description: "Известная и признанная консалтинговая компания, которая вносит ощутимый вклад в развитие цивилизованного и эффективного бизнес-сообщества",
     source: "../../works/WiseAdvice/index.html",
@@ -66,7 +78,7 @@ export const data = [{
   },
   {
     id: 'p7',
-    priority: 1,
+    priority: 3,
     title: "Business Template Design",
     description: "Included in the download is the complete design for a homepage including sections for featured content, screenshots, screencasts, various features, newsletter signup and much more – everything you would need to start building a full-on corporate website",
     source: "../../works/redux/index.html",
@@ -77,7 +89,7 @@ export const data = [{
   },
   {
     id: 'p8',
-    priority: 1,
+    priority: 3,
     title: "Treehouse (PSD Template)",
     description: "Today’s very cool and sleek download is from our kind friends over at <a href='http://freebiesxpress.com/'>http://freebiesxpress.com/</a>. This bright and spacious design suits startup companies or even ecommerce websites.",
     source: "../../works/tree_house/index.html",
@@ -88,7 +100,7 @@ export const data = [{
   },
   {
     id: 'p9',
-    priority: 1,
+    priority: 3,
     title: "TwoBytes (PSD Template)",
     description: "TwoBytes – Free PSD Website Template. Meet TwoBytes – A free minimal PSD website template. Free to use for just about anything.",
     source: "../../works/two_bytes/index.html",
