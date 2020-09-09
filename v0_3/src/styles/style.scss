@@ -313,8 +313,55 @@ body {
 }
 
 .title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
   @include f700;
   margin-bottom: 10px;
+}
+
+.action-menu {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+
+  button {
+    @include f700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.action-menu_droplist {
+  @include f400;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  background-color: #fff;
+  border-radius: 5px 0 5px 5px;
+  padding: 0 7px;
+
+  li {
+    margin: 4px 0;
+  }
+
+  a {
+    color: #000;
+    font-size: 0.8em;
+  }
+
+  display: none;
+}
+
+.action-menu:hover {
+  background-color: #fff;
+
+  .action-menu_droplist--toggle {
+    display: block;
+  }
+
 }
 
 .title__link {
