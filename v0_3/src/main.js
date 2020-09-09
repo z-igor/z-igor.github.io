@@ -13,7 +13,6 @@ try {
   wrap.classList.add('hide');
 }
 
-
 const app = new Vue({
   el: '#app',
   name: 'App',

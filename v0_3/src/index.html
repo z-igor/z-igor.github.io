@@ -56,7 +56,7 @@
           </div>
           <div class="title">
             <a :href="card.source" class="title-item title__link">{{card.title}}</a>
-            <span class="action-menu">
+            <span class="action-menu" v-show="card.github">
               <button>...</button>
               <ul class="action-menu_droplist action-menu_droplist--toggle">
                 <li><a :href="card.github" target="_blank">github</a></li>

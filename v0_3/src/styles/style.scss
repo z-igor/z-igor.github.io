@@ -401,13 +401,13 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.stack li {
-  margin: 0 5px 5px 0;
-  cursor: default;
+  li {
+    margin: 0 5px 5px 0;
+    cursor: default;
 
-  overflow: hidden;
+    overflow: hidden;
+  }
 }
 
 .stack__item {
