@@ -38,6 +38,10 @@ body {
   padding: 0 10px;
 }
 
+.wrap.hide {
+  display: none;
+}
+
 .header {
   @include f400;
   display: flex;
@@ -123,6 +127,11 @@ body {
 }
 
 .title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
   @include f700;
   margin-bottom: 10px;
 }
@@ -210,13 +219,13 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.stack li {
-  margin: 0 5px 5px 0;
-  cursor: default;
+  li {
+    margin: 0 5px 5px 0;
+    cursor: default;
 
-  overflow: hidden;
+    overflow: hidden;
+  }
 }
 
 .stack__item {

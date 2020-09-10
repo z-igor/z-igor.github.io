@@ -48,16 +48,20 @@
               <img
                 class="img-item"
                 :class="{scroll: card.scroll}"
-                :src="card.cover"
+                :src="covers[card._cover]"
                 :alt="card.title"
                 :style="card.stylesImg"
               />
             </div>
           </div>
           <div class="title">
-            <a :href="card.source" class="title-item title__link">
-              {{card.title}}
-            </a>
+            <a :href="card.source" class="title-item title__link">{{card.title}}</a>
+            <span class="action-menu" v-show="card.github">
+              <button>...</button>
+              <ul class="action-menu_droplist action-menu_droplist--toggle">
+                <li><a :href="card.github" target="_blank">github</a></li>
+              </ul>
+            </span>
           </div>
           <ul class="stack" :class="{'stack--show': card.hover}">
             <li v-for="stackElm in card.stack" :key="stackElm">

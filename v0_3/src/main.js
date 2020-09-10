@@ -1,5 +1,6 @@
 import {
   data,
+  covers
 } from '../../works';
 import './styles/style.scss';
 
@@ -25,6 +26,7 @@ const app = new Vue({
       })),
       preloader: true,
       isDestroy: null,
+      covers
     }
   },
   methods: {
@@ -71,9 +73,9 @@ const app = new Vue({
     },
   },
   mounted() {
-    this.isDestroy = setTimeout(() => {
+    window.onload = (e) => {
       this.preloader = false;
-    }, 500);
+    };
   },
   destroyed() {
     this.isDestroy = null;
