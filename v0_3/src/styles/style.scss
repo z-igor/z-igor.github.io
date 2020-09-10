@@ -63,14 +63,16 @@ body {
   box-shadow: inset 0px -1px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.header-versions a {
-  color: #000;
-  @include underline;
-}
+.header-versions {
+  a {
+    color: #000;
+    @include underline;
+  }
 
-.header-versions span {
-  padding: 0 5px;
-  color: silver;
+  span {
+    padding: 0 5px;
+    color: silver;
+  }
 }
 
 .header-contacts {
@@ -146,6 +148,17 @@ body {
   margin-bottom: 10px;
 }
 
+.title__link {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #000;
+  @include underline;
+}
+
+.title__time {
+  color: #000;
+}
+
 .action-menu {
   position: relative;
   border-radius: 5px 5px 0 0;
@@ -189,20 +202,6 @@ body {
 
 }
 
-.title__link {
-  font-size: 1.2em;
-  font-weight: 800;
-  color: #000;
-  text-decoration: none;
-}
-
-.title__link:hover {
-  text-decoration: underline;
-}
-
-.title__time {
-  color: #000;
-}
 
 .content {
   width: 100%;
