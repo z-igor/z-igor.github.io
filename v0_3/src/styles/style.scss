@@ -1,4 +1,5 @@
 @import url('reset.css');
+@import url('preloader.scss');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
 
 $speed: 1s / 20;
@@ -51,7 +52,7 @@ body {
 }
 
 .header-versions a {
-  color:#000;
+  color: #000;
 }
 
 .header-versions span {
@@ -67,66 +68,6 @@ body {
 .header-contacts a {
   color: #000;
 }
-
-/* start preloader */
-.lds-ring {
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-}
-
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #fcf;
-  border-radius: 50%;
-  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: grey transparent transparent transparent;
-}
-
-.lds-ring div:nth-child(1) {
-  -webkit-animation-delay: -0.45s;
-  animation-delay: -0.45s;
-}
-
-.lds-ring div:nth-child(2) {
-  -webkit-animation-delay: -0.3s;
-  animation-delay: -0.3s;
-}
-
-.lds-ring div:nth-child(3) {
-  -webkit-animation-delay: -0.15s;
-  animation-delay: -0.15s;
-}
-
-@-webkit-keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* end preloader */
 
 .card {
   position: relative;
@@ -184,6 +125,52 @@ body {
 .title {
   @include f700;
   margin-bottom: 10px;
+}
+
+.action-menu {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+
+  button {
+    @include f700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.action-menu_droplist {
+  @include f400;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  background-color: #fff;
+  border-radius: 5px 0 5px 5px;
+  padding: 0 7px;
+
+  li {
+    margin: 4px 0;
+  }
+
+  a {
+    color: #000;
+    font-size: 0.8em;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  display: none;
+}
+
+.action-menu:hover {
+  background-color: #fff;
+
+  .action-menu_droplist--toggle {
+    display: block;
+  }
+
 }
 
 .title__link {

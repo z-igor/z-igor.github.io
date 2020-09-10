@@ -3,7 +3,15 @@ import {
 } from '../../works';
 import './styles/style.scss';
 
-Vue.config.devtools = true;
+const wrap = document.querySelector('.wrap');
+
+try {
+  Vue.config.devtools = true;
+  wrap.classList.remove('hide');
+} catch (error) {
+  console.log('Vue is not defined');
+  wrap.classList.add('hide');
+}
 
 const app = new Vue({
   el: '#app',
