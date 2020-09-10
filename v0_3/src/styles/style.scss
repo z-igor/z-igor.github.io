@@ -50,13 +50,22 @@ body {
   box-shadow: inset 0px -1px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 .header-versions a {
   color:#000;
 }
+=======
+.header-versions {
+  a {
+    color: #000;
+    @include underline;
+  }
+>>>>>>> b0a2347... It has been builded in production
 
-.header-versions span {
-  padding: 0 5px;
-  color: silver;
+  span {
+    padding: 0 5px;
+    color: silver;
+  }
 }
 
 .header-contacts {
@@ -190,16 +199,67 @@ body {
   font-size: 1.2em;
   font-weight: 800;
   color: #000;
+<<<<<<< HEAD
   text-decoration: none;
 }
 
 .title__link:hover {
   text-decoration: underline;
+=======
+  @include underline;
+>>>>>>> b0a2347... It has been builded in production
 }
 
 .title__time {
   color: #000;
 }
+<<<<<<< HEAD
+=======
+
+.action-menu {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+
+  button {
+    @include f700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.action-menu_droplist {
+  @include f400;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  background-color: #fff;
+  border-radius: 5px 0 5px 5px;
+  padding: 0 7px;
+
+  li {
+    margin: 4px 0;
+  }
+
+  a {
+    color: #000;
+    font-size: 0.8em;
+    @include underline;
+  }
+
+  display: none;
+}
+
+.action-menu:hover {
+  background-color: #fff;
+
+  .action-menu_droplist--toggle {
+    display: block;
+  }
+
+}
+
+>>>>>>> b0a2347... It has been builded in production
 
 .content {
   width: 100%;
