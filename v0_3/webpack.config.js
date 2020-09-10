@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     main: './src/main.js',
-    vue: './src/vue.js'
   },
   output: {
     filename: '[name].js',

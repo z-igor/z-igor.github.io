@@ -1,6 +1,5 @@
 import {
   data,
-  covers
 } from '../../works';
 import './styles/style.scss';
 
@@ -10,7 +9,7 @@ try {
   Vue.config.devtools = true;
   wrap.classList.remove('hide');
 } catch (error) {
-  console.log('Vue is not defined');
+  console.info(error.message);
   wrap.classList.add('hide');
 }
 
@@ -26,7 +25,6 @@ const app = new Vue({
       })),
       preloader: true,
       isDestroy: null,
-      covers
     }
   },
   methods: {

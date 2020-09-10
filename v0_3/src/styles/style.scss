@@ -1,5 +1,5 @@
 @import url('reset.css');
-@import url('preloader.scss');
+@import url('preloader.css');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
 
 $speed: 1s / 20;
@@ -20,6 +20,14 @@ $alpha: random(100)/100;
 @mixin f700 {
   @include f400;
   font-weight: 700;
+}
+
+@mixin underline {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 body {
@@ -57,6 +65,7 @@ body {
 
 .header-versions a {
   color: #000;
+  @include underline;
 }
 
 .header-versions span {
@@ -67,10 +76,11 @@ body {
 .header-contacts {
   line-height: 1.6;
   font-size: 0.8em;
-}
 
-.header-contacts a {
-  color: #000;
+  a {
+    color: #000;
+    @include underline;
+  }
 }
 
 .card {
@@ -164,10 +174,7 @@ body {
   a {
     color: #000;
     font-size: 0.8em;
-
-    &:hover {
-      text-decoration: none;
-    }
+    @include underline;
   }
 
   display: none;

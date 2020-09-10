@@ -1,5 +1,4 @@
 
-/* start preloader */
 .lds-ring {
   display: block;
   height: 100%;
@@ -56,5 +55,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* end preloader */
