@@ -8,6 +8,7 @@ const wrap = document.querySelector('.wrap');
 
 try {
   Vue.config.devtools = true;
+  wrap.classList.remove('hide');
 } catch (error) {
   console.log('Vue is not defined');
   wrap.classList.add('hide');
