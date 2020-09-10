@@ -1,10 +1,17 @@
 import {
   data,
-  covers
 } from '../../works';
 import './styles/style.scss';
 
-Vue.config.devtools = true;
+const wrap = document.querySelector('.wrap');
+
+try {
+  Vue.config.devtools = true;
+  wrap.classList.remove('hide');
+} catch (error) {
+  console.info(error.message);
+  wrap.classList.add('hide');
+}
 
 const app = new Vue({
   el: '#app',
@@ -16,7 +23,6 @@ const app = new Vue({
         hover: false,
         stylesImg: {},
       })),
-      covers,
       preloader: true,
       isDestroy: null,
     }
@@ -65,9 +71,9 @@ const app = new Vue({
     },
   },
   mounted() {
-    this.isDestroy = setTimeout(() => {
+    window.onload = (e) => {
       this.preloader = false;
-    }, 500);
+    };
   },
   destroyed() {
     this.isDestroy = null;
