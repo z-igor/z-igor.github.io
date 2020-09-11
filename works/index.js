@@ -8,7 +8,11 @@ export const data = [{
     coverBig: "",
     offUrl: "",
     stack: ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Router'],
-    github: "https://github.com/z-igor/foreman_gh-ps/",
+    links: [{
+      github: "https://github.com/z-igor/foreman_gh-ps/",
+    }, {
+      inVision: "https://spathochy920970.invisionapp.com/public/prototype/sketvy4v1000l8e01llkrrp94",
+    }],
   },
   {
     id: 'p1',
@@ -20,7 +24,9 @@ export const data = [{
     coverBig: "",
     offUrl: "https://vk.com/doc2000002202_440831900?hash=d587464e78ed55cf9f&dl=4b5e0dfee2ac6c566e",
     stack: ['HTML', 'CSS', 'JS'],
-    github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/njs0_mini-constructor",
+    links: [{
+      github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/njs0_mini-constructor",
+    }],
   },
   {
     id: 'p2',
@@ -32,7 +38,9 @@ export const data = [{
     coverOrig: "../../works/creative_plus/creative_orig.png",
     offUrl: "http://blazrobar.com/free-psd-website-templates/creative-a-free-psd-blog-template-web-design/",
     stack: ['HTML', 'CSS', 'JS'],
-    github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/creative_plus",
+    links: [{
+      github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/creative_plus",
+    }],
   },
   {
     id: 'p3',
@@ -44,7 +52,9 @@ export const data = [{
     coverOrig: "../../works/dsgn/dsgn_orig_3000-7600.jpg",
     offUrl: "http://theuncreativelab.com/portfolio/dsgn-free-psd-template/",
     stack: ['HTML', 'CSS', 'JS'],
-    github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/dsgn",
+    links: [{
+      github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/dsgn",
+    }],
   },
   {
     id: 'p4',
@@ -56,7 +66,9 @@ export const data = [{
     coverOrig: "../../works/gift_shop/gift_shop_1140.jpg",
     offUrl: "https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/Giftshop_Free_PSD_eCommerce_Template.png",
     stack: ['HTML', 'CSS', 'JS'],
-    github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/gift_shop",
+    links: [{
+      github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/gift_shop",
+    }],
   },
   {
     id: 'p5',
@@ -68,7 +80,9 @@ export const data = [{
     coverOrig: "../../works/golden_theme/golden_theme_orig.jpg",
     offUrl: "https://startbootstrap.com/template-overviews/agency/",
     stack: ['HTML', 'CSS', 'JS'],
-    github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/golden_theme",
+    links: [{
+      github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/golden_theme",
+    }],
   },
   {
     id: 'p6',
@@ -80,7 +94,9 @@ export const data = [{
     coverOrig: "",
     offUrl: "https://wiseadvice.ru/o-kompanii/",
     stack: ['HTML', 'CSS', 'JS'],
-    github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/WiseAdvice",
+    links: [{
+      github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/WiseAdvice",
+    }],
   },
   {
     id: 'p7',
@@ -92,7 +108,9 @@ export const data = [{
     coverOrig: "../works/redux/redux_orig.jpg",
     offUrl: "http://www.premiumpixels.com/freebies/business-website-template-design/",
     stack: ['HTML', 'CSS', 'JS'],
-    github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/redux",
+    links: [{
+      github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/redux",
+    }],
   },
   {
     id: 'p8',
@@ -104,7 +122,9 @@ export const data = [{
     coverOrig: "../works/redux/redux_orig.jpg",
     offUrl: "http://blazrobar.com/free-psd-website-templates/treehouse-website-psd-template/",
     stack: ['HTML', 'CSS', 'JS'],
-    github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/tree_house",
+    links: [{
+      github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/tree_house",
+    }],
   },
   {
     id: 'p9',
@@ -116,6 +136,8 @@ export const data = [{
     coverOrig: "../../works/two_bytes/two_bytes_orig.jpg",
     offUrl: "http://blazrobar.com/free-psd-website-templates/twobytes-free-psd-website-template/",
     stack: ['HTML', 'CSS', 'JS'],
-    github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/two_bytes",
+    links: [{
+      github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/two_bytes",
+    }],
   },
 ];
