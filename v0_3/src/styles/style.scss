@@ -99,7 +99,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: silver;
+  // background-color: silver;
+  background: linear-gradient(-45deg, #d3d3d3, #7d7d7d);
   border-radius: 10px;
 }
 
@@ -129,7 +130,8 @@ body {
   right: -5px;
   bottom: 40px;
   z-index: -1;
-  background-color: lightgray;
+  // background-color: lightgray;
+  background: linear-gradient(-45deg, #eaeaea, #ccc);
   border-radius: 20px 20px 20px 50px;
 
   transition: all .2s ease-out;
