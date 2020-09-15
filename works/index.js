@@ -7,7 +7,7 @@ export const data = [{
     cover: '../../works/alexeich_b/demo.png',
     coverBig: "",
     offUrl: "",
-    stack: ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Router'],
+    stack: ['React', 'Redux', 'Router', 'HTML', 'CSS', 'JS'],
     links: [{
       github: "https://github.com/z-igor/foreman_gh-ps/",
     }, {
