@@ -9,8 +9,9 @@ try {
   Vue.config.devtools = true;
   wrap.classList.remove('hide');
 } catch (error) {
-  console.info(error.message);
   wrap.classList.add('hide');
+  throw new Error(error.message);
+  // console.info(error.message);
 }
 
 const app = new Vue({

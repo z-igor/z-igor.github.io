@@ -1,6 +1,5 @@
 @import url('reset.css');
 @import url('preloader.css');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
 
 $speed: 1s / 20;
 $offset: -24px;
@@ -8,7 +7,7 @@ $bgBody: #f2f2f2;
 $alpha: random(100)/100;
 
 @mixin f400 {
-  font-family: "Ubuntu", Tahoma, Helvetica;
+  font-family: "Ubuntu", Tahoma, Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -31,6 +30,7 @@ $alpha: random(100)/100;
 }
 
 body {
+  @include f400;
   background-color: $bgBody;
 }
 
@@ -51,7 +51,6 @@ body {
 }
 
 .header {
-  @include f400;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -93,8 +92,6 @@ body {
   margin: 5px auto;
   padding: 10px;
   border-radius: 5px;
-
-  font-family: Tahoma;
 }
 
 .card:hover .bg {
@@ -176,19 +173,27 @@ body {
   position: absolute;
   right: 0;
   top: 16px;
+  max-width: 250px;
+  overflow: hidden;
+
   background-color: #fff;
   border-radius: 5px 0 5px 5px;
-  padding: 0 7px;
   z-index: 10;
 
   li {
-    margin: 4px 0;
+    padding: 4px 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid silver;
+    }
   }
 
   a {
+    @include underline;
+    display: block;
+    padding: 0 7px;
     color: #000;
     font-size: 0.8em;
-    @include underline;
   }
 
   display: none;
@@ -200,9 +205,7 @@ body {
   .action-menu_droplist--toggle {
     display: block;
   }
-
 }
-
 
 .content {
   width: 100%;
