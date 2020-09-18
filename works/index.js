@@ -1,4 +1,23 @@
 export const data = [{
+    id: 'p01',
+    priority: 1,
+    title: "ТЗ от TRLogic",
+    description: "Пет-проект",
+    source: "https://z-igor.github.io/",
+    cover: '../../works/trlogic/demo.png',
+    coverBig: "",
+    offUrl: "",
+    stack: ['Vue', 'HTML', 'CSS', 'JS'],
+    links: [{
+        github: "https://github.com/z-igor/z-igor.github.io/tree/master/works/trlogic/",
+      }, {
+        dribbble: "https://dribbble.com/shots/6609532-EverDo-Exploration/attachments",
+      }, {
+        "career.habr": "https://career.habr.com/companies/tr-logic",
+      }
+    ],
+  },
+  {
     id: 'p0',
     priority: 1,
     title: "Алексеич бригадир",

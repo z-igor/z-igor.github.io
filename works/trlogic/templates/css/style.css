@@ -1,0 +1,412 @@
+:root {
+    --blue-color: #2692ff;
+    --blue-secondary: #d9eeff;
+    --grad: linear-gradient(10deg, #f5f4ff 20%, #f8f7ff 100%);
+    --one-s: all .1s linear 0s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    background-image: url(../assets/bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Arial;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    margin: 2px;
+    padding: 4px 8px;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    transition: var(--one-s);
+}
+
+button.btn:active {
+    opacity: .3;
+}
+
+button.btn:disabled {
+    opacity: .2;
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+.btn i {
+    padding: 0 6px 0 0;
+}
+
+.btn-default {
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: var(--blue-color);
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: grey;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.btn-danger {
+    background-color: red;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: orange;
+    color: #000;
+}
+
+.btn-info {
+    background-color: blue;
+    color: #fff;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid lightgray
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.app {
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+    margin: 15px;
+
+    transition: var(--one-s);
+
+    overflow: hidden;
+}
+
+.container {
+    height: 92vh;
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    position: relative;
+    background: linear-gradient(60deg, #b9b5dc 20%, var(--blue-secondary) 100%);
+    padding: 15px 20px;
+
+    min-width: 10px;
+    max-width: 250px;
+
+    box-shadow: inset -3px 0px 6px 0px rgba(0, 0, 0, .15);
+
+    transition: var(--one-s);
+    overflow-x: hidden;
+}
+
+.sidebar--open {
+    flex-basis: 200px;
+}
+
+.sidebar--short {
+    flex-basis: 30px;
+}
+
+.sidebar-header {
+    text-align: right;
+}
+
+.sidebar-header .btn-default:hover {
+    background-color: rgba(255, 255, 255, .2);
+    opacity: 1;
+}
+
+.sidebar-lists {
+    list-style: none;
+    margin: 10px 0;
+    flex: 1 auto;
+}
+
+.sidebar-list {
+    position: relative;
+    margin: 15px 0;
+    padding: 5px 0;
+    font-size: 0.9em;
+
+    transition: var(--one-s);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidebar-list.active a {
+    transition: var(--one-s);
+    color: var(--blue-color);
+}
+
+.sidebar-list a {
+    display: inline-block;
+    width: 100%;
+
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sidebar-list p {
+    display: inline;
+}
+
+.sidebar-list:not(.active) a:hover {
+    opacity: .5;
+}
+
+.icons {
+    padding: 0 8px;
+}
+
+.sidebar--short .sidebar-list .icons {
+    padding: 0 10px;
+}
+
+.sidebar--short .sidebar-header {
+    text-align: center;
+}
+
+.sidebar--short .sidebar-header .btn-default {
+    text-align: center;
+    margin: 0;
+}
+
+.indicators {
+    position: absolute;
+    color: var(--blue-color);
+    font-size: .8em;
+    top: 4px;
+    left: -1px;
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    position: relative;
+    width: 100%;
+}
+
+/* .header {} */
+
+.header-head {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--blue-secondary);
+}
+
+.breadcrumbs {
+    font-size: .8em;
+    font-weight: bold;
+    color: silver;
+}
+
+.header-head__title {
+    margin: 10px 0 0 0;
+}
+
+.content-body {
+    flex: 2 auto;
+}
+
+.contacts,
+.contacts-edit {
+    margin: 20px;
+}
+
+.wcontacts {
+    margin: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    background: var(--grad);
+}
+
+.contacts-edit__form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-edit__form>label,
+.form-action,
+.contacts-edit__form .newField {
+    margin: 0 0 15px 0;
+}
+
+.contacts-edit__form label p {
+    padding: 5px 0;
+    font-size: .8em;
+    color: grey;
+}
+
+.contacts-edit__form label input,
+.contacts-edit__form .newField input {
+    border: 1px solid #1997fe;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contacts-edit__form label input:focus {
+    background-color: #e7f4ff;
+}
+
+.contacts-edit__form .form-action,
+.contacts-edit__form .newField {
+    flex: 1 100%;
+}
+
+.contacts-edit__form .newField label {
+    display: inline-block;
+}
+
+.contacts-edit__form .newField input {
+    border-color: green;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contacts-edit__form .newField input:focus {
+    background-color: rgb(222, 255, 222);
+}
+
+.contacts table,
+.wcontacts table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contacts-edit__title,
+.wcontacts-title {
+    margin: 0 0 15px 0;
+}
+
+.contacts-table thead,
+.wcontacts-table thead {
+    cursor: default;
+}
+
+.contacts-table thead th,
+.wcontacts-table thead th {
+    text-align: left;
+}
+
+.contacts-table thead p,
+.wcontacts-table thead p {
+    color: grey;
+    font-weight: normal;
+    font-size: .7em;
+    padding: 0 0 5px 0;
+}
+
+.contacts-table tbody,
+.wcontacts-table tbody {
+    font-size: .8em;
+}
+
+.contacts-table tbody tr,
+.wcontacts-table tbody tr {
+    transition: var(--one-s);
+}
+
+.contacts-table tbody a,
+.wcontacts-table tbody a {
+    padding: 5px 0;
+    margin: 5px 0;
+    font-weight: 100;
+    display: inline-block;
+    width: 100%;
+}
+
+.contacts-table tbody tr:hover {
+    background-color: #f3f1ff;
+}
+
+.wcontacts-table tbody tr:hover {
+    background-color: #fcfcff;
+}
+
+.contact-added,
+.contact-removed {
+    color: green;
+}
+
+.contact-added i,
+.contact-removed i {
+    padding: 0 5px;
+}
+
+.sidebar-footer {
+    background-color: lightgreen;
+    width: 100%;
+}
+
+.sidebar--short .sidebar-footer {
+    display: none;
+}
+
+.footer {
+    padding: 15px 20px;
+    border-top: 1px solid var(--blue-secondary);
+}
