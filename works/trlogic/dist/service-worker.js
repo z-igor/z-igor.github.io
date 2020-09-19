@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.901df26d2fb5248bb58372aa734fef9c.js"
+  "/z-igor.github.io/works/trlogic/gh-pages/precache-manifest.98e47d45aedbd181ec5d1c1e1d6b5ed5.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "trlogic"});
