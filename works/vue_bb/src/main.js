@@ -8,13 +8,13 @@ const wrap = document.querySelector('.wrap');
 const tempTimer = Vue.component("temp-timer", {
   props: ["timer"],
   data: () => ({
-    h: 2,
-    m: 2,
-    s: 2,
+    h: 0,
+    m: 0,
+    s: 30,
     defaultTime: {
-      h: 1,
-      m: 1,
-      s: 30,
+      h: 0,
+      m: 0,
+      s: 45,
     },
     stop: false,
     pause: false,
