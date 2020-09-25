@@ -3,8 +3,6 @@ import pause from './assets/pause.svg';
 import start from './assets/triangular.svg';
 import stop from './assets/square.svg';
 
-const wrap = document.querySelector('.wrap');
-
 const tempTimer = Vue.component("temp-timer", {
   props: ["timer"],
   data: () => ({
