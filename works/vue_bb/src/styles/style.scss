@@ -1,0 +1,132 @@
+@import url('./reset.css');
+$width: 225px;
+$height: 120px;
+$offsetTop: $height / 2;
+$bgBody: #353638;
+
+@mixin underline {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+
+  outline: none;
+
+  &:active svg {
+    fill: #fff;
+  }
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: $bgBody;
+}
+
+#app {
+  position: relative;
+}
+
+.wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 75px 106px 35px;
+}
+
+.timer-add,
+.timer {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: #696969;
+  color: #9E9E9E;
+
+  max-width: $width;
+  width: $width;
+  flex-basis: 30%;
+  height: $height;
+
+  margin: 20px;
+
+  &.active {
+    color: #fff;
+
+    & svg {
+      fill: #fff;
+    }
+  }
+}
+
+.timer-add {
+  background-color: #696969;
+  text-align: center;
+  font-size: 4em;
+  line-height: $height;
+  cursor: pointer;
+
+  &:hover p {
+    color: #fff;
+  }
+}
+
+.result,
+.actions {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.result {
+  height: $offsetTop;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2em;
+  border-bottom: 1px solid #9E9E9E;
+}
+
+.actions {
+  height: $offsetTop;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btn {
+    padding: 0 20px;
+  }
+}
+
+svg {
+  width: 20px;
+  fill: #9E9E9E;
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    justify-content: space-around;
+  }
+
+  .timer {
+    margin: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
