@@ -4,6 +4,11 @@
  * License: none (public domain)
  * start Reset css
 */
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
 html,
 body,
 div,
