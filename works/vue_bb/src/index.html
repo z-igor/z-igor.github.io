@@ -9,7 +9,7 @@
     <div id="app">
       <div class="wrap">
         <block-timer v-for="timer in timers" :key="timer.id" :timer="timer"></block-timer>
-        <add-block @add="onAddClick"></add-block>
+        <add-block @add-timer="onAddTimeClick" @add-stopwatch="onAddTimeClick"></add-block>
       </div>
     </div>
 

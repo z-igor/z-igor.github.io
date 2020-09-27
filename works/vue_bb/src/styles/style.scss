@@ -21,8 +21,17 @@ $bgBody: #353638;
 
   outline: none;
 
-  &:active svg {
-    fill: #fff;
+  &:active {
+    color: #fff;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  &:disabled {
+    opacity: .5;
+    color: #9E9E9E;
   }
 }
 
@@ -44,8 +53,8 @@ body {
   margin: 75px 106px 35px;
 }
 
-.timer-add,
-.timer {
+.time-block-add,
+.time-block {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
@@ -69,15 +78,38 @@ body {
   }
 }
 
-.timer-add {
+.time-block {
+
+  &.timer:after,
+  &.stopwatch:after {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    font-size: 1em;
+    z-index: 2;
+  }
+
+  &.timer:after {
+    content: "T";
+  }
+
+  &.stopwatch:after {
+    content: "S";
+  }
+}
+
+.time-block-add {
   background-color: #696969;
-  text-align: center;
-  font-size: 4em;
-  line-height: $height;
+  font-size: 1.4em;
+  line-height: $height / 2;
   cursor: pointer;
 
-  &:hover p {
-    color: #fff;
+  p {
+    padding: 0 15px;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -101,11 +133,15 @@ body {
   height: $offsetTop;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 
   .btn {
     padding: 0 20px;
   }
+}
+
+.speed {
+  font-weight: 700;
 }
 
 svg {
@@ -118,7 +154,7 @@ svg {
     justify-content: space-around;
   }
 
-  .timer {
+  .time-block {
     margin: 25px;
   }
 }
