@@ -6,6 +6,7 @@ export const data = [{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     source: "tts.html",
 =======
     source: "../dist/tts.html",
@@ -16,6 +17,9 @@ export const data = [{
 =======
     source: "tts.html",
 >>>>>>> 0164749... Builded
+=======
+    source: "tts.html",
+>>>>>>> 903ee9f8298d811648453f7ae32d41b31c5af3f0
     cover: '../../works/vue-test-tasks/demo.png',
     coverBig: "",
     offUrl: "",
