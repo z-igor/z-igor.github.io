@@ -58,11 +58,13 @@
             <a :href="card.source" class="title-item title__link"
               >{{card.title}}</a
             >
-            <span class="action-menu">
+            <span class="action-menu" v-show="card.links.length">
               <button>...</button>
               <ul class="action-menu_droplist action-menu_droplist--toggle">
                 <li v-for="link in card.links" :key="link">
-                  <a :href="link[Object.keys(link)]" target="_blank">{{...Object.keys(link)}}</a>
+                  <a :href="link[Object.keys(link)]" target="_blank"
+                    >{{...Object.keys(link)}}</a
+                  >
                 </li>
               </ul>
             </span>
@@ -76,6 +78,9 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/vue@2.6.12"
+    ></script>
   </body>
 </html>
