@@ -4,10 +4,14 @@ export const data = [{
     title: "Тестовые задания на Vue",
     description: "Пет-проект",
 <<<<<<< HEAD
+<<<<<<< HEAD
     source: "tts.html",
 =======
     source: "../dist/tts.html",
 >>>>>>> 9d7b3f1... Uploaded
+=======
+    source: "./tts.html",
+>>>>>>> f8fd2b9... Changed link to directory
     cover: '../../works/vue-test-tasks/demo.png',
     coverBig: "",
     offUrl: "",
