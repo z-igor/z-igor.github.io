@@ -4,7 +4,7 @@ export const data = [{
     title: "Тестовые задания на Vue",
     description: "Пет-проект",
     source: "../.../dist/tts.html",
-    cover: '../../works/vue-task-tests/demo.png',
+    cover: '../../works/vue-test-tasks/demo.png',
     coverBig: "",
     offUrl: "",
     stack: ['VUE', 'JS', 'HTML', 'CSS'],
