@@ -5,6 +5,7 @@ export const data = [{
     description: "Пет-проект",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     source: "tts.html",
 =======
     source: "../dist/tts.html",
@@ -12,6 +13,9 @@ export const data = [{
 =======
     source: "./tts.html",
 >>>>>>> f8fd2b9... Changed link to directory
+=======
+    source: "tts.html",
+>>>>>>> 0164749... Builded
     cover: '../../works/vue-test-tasks/demo.png',
     coverBig: "",
     offUrl: "",
