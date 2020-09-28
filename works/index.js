@@ -1,21 +1,14 @@
 export const data = [{
     id: 'p01',
     priority: 1,
-    title: "ТЗ от TRLogic",
+    title: "Тестовые задания на Vue",
     description: "Пет-проект",
-    source: "https://z-igor.github.io/vue-widget_gh-ps/",
-    cover: '../../works/trlogic/demo.png',
+    source: "../.../dist/tts.html",
+    cover: '../../works/vue-task-tests/demo.png',
     coverBig: "",
     offUrl: "",
-    stack: ['VUE', 'HTML', 'CSS', 'JS'],
-    links: [{
-        github: "https://github.com/z-igor/vue-widget_gh-ps/tree/master",
-      }, {
-        dribbble: "https://dribbble.com/shots/6609532-EverDo-Exploration/attachments",
-      }, {
-        "career.habr": "https://career.habr.com/companies/tr-logic",
-      }
-    ],
+    stack: ['VUE', 'JS', 'HTML', 'CSS'],
+    links: [],
   },
   {
     id: 'p0',

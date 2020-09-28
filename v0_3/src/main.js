@@ -2,12 +2,15 @@ import {
   data,
 } from '../../works';
 import './styles/style.scss';
+import "./tts.html";
 
 const wrap = document.querySelector('.wrap');
 
 try {
   Vue.config.devtools = true;
-  wrap.classList.remove('hide');
+  if (wrap) {
+    wrap.classList.remove('hide');
+  }
 } catch (error) {
   wrap.classList.add('hide');
   throw new Error(error.message);

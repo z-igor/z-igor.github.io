@@ -4,9 +4,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     main: './src/main.js',
+    tts: './src/listTasks.js',
   },
   output: {
-    filename: '[name].js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
@@ -14,13 +15,24 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      title: 'index',
+      filename: 'index.html',
+      template: './src/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'tts',
+      filename: 'tts.html',
+      template: './src/tts.html'
     })
   ],
   module: {
     rules: [{
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
       },
       {
         test: /\.(woff(2)?|ttf|eot|png|jpe?g|gif)$/i,
