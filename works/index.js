@@ -3,7 +3,7 @@ export const data = [{
     priority: 1,
     title: "Тестовые задания на Vue",
     description: "Пет-проект",
-    source: "./tts.html",
+    source: "dist/tts.html",
     cover: '../../works/vue-test-tasks/demo.png',
     coverBig: "",
     offUrl: "",
