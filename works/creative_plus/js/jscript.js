@@ -1,18 +1,19 @@
-$(document).ready(function(){
+$(document).ready(function () {
+  let headerH = $(".header").innerHeight();
+  let mainH = $(".main").innerHeight();
+  let footerH = $(".footer").innerHeight();
+  let screenH = $(window).height();
+  let withoutFooterH = Math.floor(headerH + mainH);
 
-	 $(window).scroll(function(){
-			var scroll = $(this).scrollTop();
+  let scroll = $(this).scrollTop();
 
-		if (scroll > 475){
-			$(".fix").css({
-			'opacity' : '1'});
-			console.log(scroll);			
-		}
+  $(window).scroll(function () {
+    scroll = $(this).scrollTop();
 
-		else {
-			$(".fix").css({
-			'opacity' : '0'});
-		}
-	});
-
+    if (scroll >= headerH && scroll <= withoutFooterH) {
+      $(".float-media").removeClass("float-media--hide");
+    } else {
+      $(".float-media").addClass("float-media--hide");
+    }
+  });
 });
