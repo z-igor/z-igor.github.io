@@ -73,7 +73,7 @@ export const data = [{
     priority: 3,
     title: "Gift shop",
     description: "Giftshop is a, you’ve guessed it, template for gift shops. Flat and modern design will ensure your products are showcased in a unique way.",
-    source: "../../works/gift_shop/index.htm",
+    source: "../../works/gift_shop/index.html",
     cover: "../../works/gift_shop/this_300.jpg",
     coverOrig: "../../works/gift_shop/gift_shop_1140.jpg",
     offUrl: "https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/Giftshop_Free_PSD_eCommerce_Template.png",
