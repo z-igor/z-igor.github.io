@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset */
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+}
+
+body {
+  margin: 20px 0;
+  padding: 0 20px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  color: #202020;
+  background-color: #fbfbfb;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App */
+.App__title {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  vertical-align: sub;
+}
+
+.App__btn-show {
+  border: none;
+  background-color: silver;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+.App__btn-show:hover {
+  opacity: .8;
+}
+
+.App__btn-show:active {
+  opacity: 0.6;
+}
+
+.App__btn-show:disabled {
+  cursor: default;
+  opacity: .8;
+  pointer-events: none;
+}
+
+.container {
+  display: flex;
+  max-width: 900px;
+  margin: 15px auto 0;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.pokemon-box {
+  width: 40%;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.pokemon__text {
+  margin: 0;
+}
+
+.pokemon__name {
+  text-transform: uppercase;
+  background: linear-gradient(30deg, orange 10%, rgb(181, 181, 0) 100%);
+  text-align: center;
+  padding: 10px 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.25rem;
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .4);
+}
+
+.pokemon__meta,
+.pokemon__image,
+.pokemon__abilities,
+.pokemon__forms,
+.pokemon__stats {
+  padding: 5px;
+  margin: 0 0 5px 0;
+}
+
+.pokemon__meta-item {
+  padding: 5px;
+  margin-right: 5px;
+  background-color: grey;
+  font-size: 0.8rem;
+  color: #fff;
+  display: inline-block;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+.pokemon__image {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemon__image-item {
+  flex: 1 25%;
+}
+
+.pokemon__abilities {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pokemon__ability {
+  font-size: 0.8rem;
+  margin: 2px;
+  background-color: orange;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+.pokemon__ability-item {
+  padding: 0.25rem;
+  display: inline-block;
+}
+
+.pokemon__ability-item:not(:last-child) {
+  background-color: #b37400;
+  color: #fff;
+}
+
+.pokemon__stats {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.pokemon__stats-title {
+  flex: 1 100%;
+  margin: 0 0 5px 0;
+}
+
+.pokemon__stat-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: rgb(221, 221, 221);
+  text-align: center;
+  margin: 2px;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+.pokemon__stat {
+  display: block;
+  padding: 0.125rem 0.5rem;
+  font-size: .7rem;
+  cursor: default;
+}
+
+.pokemon__stat-title {
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.pokemon__stat:not(:last-child) {
+  border-bottom: 1px solid rgb(191, 173, 173);
+}
+
+@media (max-width: 760px) {
+  .pokemon-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .pokemon__image {
+    flex-flow: column wrap;
+  }
+
+  .pokemon__meta-item {
+    margin: 2px;
+  }
+}

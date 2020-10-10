@@ -5,7 +5,6 @@
 $speed: 1s / 20;
 $offset: -24px;
 $bgBody: #f2f2f2;
-$alpha: random(100)/100;
 
 @mixin f300 {
   font-family: 'ubuntulight', Tahoma, Helvetica, sans-serif;
@@ -52,7 +51,7 @@ body {
   align-items: center;
 }
 
-.wrap.hide {
+.wrap--hide {
   display: none;
 }
 
@@ -66,28 +65,46 @@ body {
   padding: 15px;
   border-radius: 5px;
   box-shadow: inset 0px -1px 3px 1px rgba(0, 0, 0, 0.1);
-}
 
-.header-versions {
-  a {
+  &__title {}
+
+  &__link {
+    @include underline;
+  }
+
+  &__version-link {
+    position: relative;
     color: #000;
     @include underline;
+
+    &:not(:last-child) {
+      padding-right: 1.25rem;
+    }
+
+    &:not(:last-child):after {
+      position: absolute;
+      content: "/";
+      right: 5px;
+      color: silver;
+    }
   }
 
-  span {
-    padding: 0 5px;
-    color: silver;
+  &__version-link--active {
+    text-decoration: underline;
+  }
+
+  &__contacts {
+    line-height: 1.6;
+    font-size: 0.8em;
   }
 }
 
-.header-contacts {
-  line-height: 1.6;
-  font-size: 0.8em;
+/* start legacy code 
+ =========================================================
 
-  a {
-    @include underline;
-  }
-}
+ end legacy code 
+ =========================================================*/
+
 
 .card {
   position: relative;
