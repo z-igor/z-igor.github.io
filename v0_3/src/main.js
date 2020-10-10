@@ -9,10 +9,10 @@ const wrap = document.querySelector('.wrap');
 try {
   Vue.config.devtools = true;
   if (wrap) {
-    wrap.classList.remove('hide');
+    wrap.classList.remove('wrap--hide');
   }
 } catch (error) {
-  wrap.classList.add('hide');
+  wrap.classList.add('wrap--hide');
   throw new Error(error.message);
   // console.info(error.message);
 }
