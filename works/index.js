@@ -1,4 +1,17 @@
 export const data = [{
+    id: 'p02',
+    priority: 1,
+    title: "Создание баннера",
+    description: "Тестовые задания на React",
+    source: "https://z-igor.github.io/theAvtBannerCreator/",
+    cover: '../../works/theAvitoBannerCreator/demo.png',
+    coverBig: "",
+    offUrl: "",
+    stack: ['ReactJS', 'Redux', 'Ant design', 'JS', 'HTML', 'SCSS'],
+    links: [{
+      github: "https://github.com/z-igor/theAvtBannerCreator/tree/v2",
+    }],
+  }, {
     id: 'p01',
     priority: 1,
     title: "Тестовые задания на Vue",
